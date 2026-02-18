@@ -1,5 +1,26 @@
 [
   {
+    "id": "W1964981411",
+    "title": "The Chicago face database: A free stimulus set of faces and norming data",
+    "authors": [
+      "S. Debbie",
+      "Joshua Correll",
+      "Bernd Wittenbrink"
+    ],
+    "year": 2015,
+    "journal": "Behavior Research Methods",
+    "doi_or_url": "https://doi.org/10.3758/s13428-014-0532-5",
+    "citation_count": 1753,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W2048818633",
     "title": "Cyberball: A program for use in research on interpersonal ostracism and acceptance",
     "authors": [
@@ -10,6 +31,51 @@
     "journal": "Behavior Research Methods",
     "doi_or_url": "https://doi.org/10.3758/bf03192765",
     "citation_count": 984,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2794136334",
+    "title": "Why and how to use virtual reality to study human social interaction: The challenges of exploring a new research landscape",
+    "authors": [
+      "Xueni Pan",
+      "Antonia F. de C. Hamilton"
+    ],
+    "year": 2018,
+    "journal": "British Journal of Psychology",
+    "doi_or_url": "https://doi.org/10.1111/bjop.12290",
+    "citation_count": 679,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2153918937",
+    "title": "Neural correlates of social exclusion during adolescence: understanding the distress of peer rejection",
+    "authors": [
+      "Carrie L. Masten",
+      "Naomi I. Eisenberger",
+      "Larissa A. Borofsky",
+      "Jennifer H. Pfeifer",
+      "Kristin McNealy",
+      "John C. Mazziotta",
+      "Mirella Dapretto"
+    ],
+    "year": 2009,
+    "journal": "Social Cognitive and Affective Neuroscience",
+    "doi_or_url": "https://doi.org/10.1093/scan/nsp007",
+    "citation_count": 500,
     "is_high_impact": false,
     "open_access": true,
     "used_for": [
@@ -41,6 +107,32 @@
     "notes": ""
   },
   {
+    "id": "W2110646298",
+    "title": "Separate neural representations for physical pain and social rejection",
+    "authors": [
+      "Choong\u2010Wan Woo",
+      "Leonie Koban",
+      "Ethan Kross",
+      "Martin A. Lindquist",
+      "Marie T. Banich",
+      "Luka Ru\u017ei\u0107",
+      "Jessica R. Andrews\u2010Hanna",
+      "Tor D. Wager"
+    ],
+    "year": 2014,
+    "journal": "Nature Communications",
+    "doi_or_url": "https://doi.org/10.1038/ncomms6380",
+    "citation_count": 314,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W2345380149",
     "title": "Introduction to Interpersonal Acceptance-Rejection Theory (IPARTheory) and Evidence",
     "authors": [
@@ -50,6 +142,48 @@
     "journal": "Online Readings in Psychology and Culture",
     "doi_or_url": "https://doi.org/10.9707/2307-0919.1055",
     "citation_count": 287,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2040047870",
+    "title": "Neuroscience of human social interactions and adult attachment style",
+    "authors": [
+      "Pascal Vrti\u010dka",
+      "Patrik Vuilleumier"
+    ],
+    "year": 2012,
+    "journal": "Frontiers in Human Neuroscience",
+    "doi_or_url": "https://doi.org/10.3389/fnhum.2012.00212",
+    "citation_count": 280,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1840782099",
+    "title": "Inclusion: Conceptualization and measurement",
+    "authors": [
+      "Wiebren S. Jansen",
+      "Sabine Otten",
+      "Karen I. van der Zee",
+      "Lise Jans"
+    ],
+    "year": 2014,
+    "journal": "European Journal of Social Psychology",
+    "doi_or_url": "https://doi.org/10.1002/ejsp.2011",
+    "citation_count": 265,
     "is_high_impact": false,
     "open_access": true,
     "used_for": [
@@ -102,6 +236,51 @@
     "notes": ""
   },
   {
+    "id": "W2062104800",
+    "title": "Ostracism increases social susceptibility",
+    "authors": [
+      "Adrienne R. Carter\u2010Sowell",
+      "Zhansheng Chen",
+      "Kipling D. Williams"
+    ],
+    "year": 2008,
+    "journal": "Social Influence",
+    "doi_or_url": "https://doi.org/10.1080/15534510802204868",
+    "citation_count": 226,
+    "is_high_impact": false,
+    "open_access": false,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1988525883",
+    "title": "Ostracism Online: A social media ostracism paradigm",
+    "authors": [
+      "Wouter Wolf",
+      "Ana Levordashka",
+      "Johanna R. Ruff",
+      "Steven R. Kraaijeveld",
+      "Jan-Matthis Lueckmann",
+      "Kipling D. Williams"
+    ],
+    "year": 2014,
+    "journal": "Behavior Research Methods",
+    "doi_or_url": "https://doi.org/10.3758/s13428-014-0475-x",
+    "citation_count": 211,
+    "is_high_impact": false,
+    "open_access": false,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W2144195598",
     "title": "Do neural responses to rejection depend on attachment style? An fMRI study",
     "authors": [
@@ -126,6 +305,30 @@
     "notes": ""
   },
   {
+    "id": "W2046396841",
+    "title": "Social exclusion and punishment of excluders: Neural correlates and developmental trajectories",
+    "authors": [
+      "Bregtje Gunther Moor",
+      "Berna G\u00fcro\u011flu",
+      "Zde\u0148a A. Op de Macks",
+      "Serge A.R.B. Rombouts",
+      "Maurits W. van der Molen",
+      "Eveline A. Crone"
+    ],
+    "year": 2011,
+    "journal": "NeuroImage",
+    "doi_or_url": "https://doi.org/10.1016/j.neuroimage.2011.07.028",
+    "citation_count": 201,
+    "is_high_impact": true,
+    "open_access": false,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W2138281587",
     "title": "Time spent with friends in adolescence relates to less neural sensitivity to later peer rejection",
     "authors": [
@@ -139,6 +342,51 @@
     "journal": "Social Cognitive and Affective Neuroscience",
     "doi_or_url": "https://doi.org/10.1093/scan/nsq098",
     "citation_count": 199,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2208612806",
+    "title": "In-Group Ostracism Increases High-Fidelity Imitation in Early Childhood",
+    "authors": [
+      "Rachel E. Watson\u2010Jones",
+      "Harvey Whitehouse",
+      "Cristine H. Legare"
+    ],
+    "year": 2015,
+    "journal": "Psychological Science",
+    "doi_or_url": "https://doi.org/10.1177/0956797615607205",
+    "citation_count": 194,
+    "is_high_impact": true,
+    "open_access": false,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2139616223",
+    "title": "Peer acceptance and rejection through the eyes of youth: pupillary, eyetracking and ecological data from the Chatroom Interact task",
+    "authors": [
+      "Jennifer S. Silk",
+      "Laura R. Stroud",
+      "Greg J. Siegle",
+      "Ronald E. Dahl",
+      "Kyung Hwa Lee",
+      "Eric E. Nelson"
+    ],
+    "year": 2011,
+    "journal": "Social Cognitive and Affective Neuroscience",
+    "doi_or_url": "https://doi.org/10.1093/scan/nsr044",
+    "citation_count": 190,
     "is_high_impact": false,
     "open_access": true,
     "used_for": [
@@ -244,6 +492,72 @@
     "notes": ""
   },
   {
+    "id": "W2900657545",
+    "title": "The complex neurobiology of resilient functioning after childhood maltreatment",
+    "authors": [
+      "Konstantinos Ioannidis",
+      "Adrian Dahl Askelund",
+      "Rogier Kievit",
+      "Anne\u2010Laura van Harmelen"
+    ],
+    "year": 2020,
+    "journal": "BMC Medicine",
+    "doi_or_url": "https://doi.org/10.1186/s12916-020-1490-7",
+    "citation_count": 167,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3111758481",
+    "title": "Upgrading Education with Technology: Insights from Experimental Research",
+    "authors": [
+      "Maya Escueta",
+      "Andre Nickow",
+      "Philip Oreopoulos",
+      "Vincent Quan"
+    ],
+    "year": 2020,
+    "journal": "Journal of Economic Literature",
+    "doi_or_url": "https://doi.org/10.1257/jel.20191507",
+    "citation_count": 163,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1978329260",
+    "title": "Chronic Childhood Peer Rejection is Associated with Heightened Neural Responses to Social Exclusion During Adolescence",
+    "authors": [
+      "Geert\u2010Jan Will",
+      "P.A.C. van Lier",
+      "Eveline A. Crone",
+      "Berna G\u00fcro\u011flu"
+    ],
+    "year": 2015,
+    "journal": "Journal of Abnormal Child Psychology",
+    "doi_or_url": "https://doi.org/10.1007/s10802-015-9983-0",
+    "citation_count": 163,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W1996808764",
     "title": "Cold-blooded loneliness: Social exclusion leads to lower skin temperatures",
     "authors": [
@@ -268,28 +582,6 @@
     "notes": ""
   },
   {
-    "id": "W1978329260",
-    "title": "Chronic Childhood Peer Rejection is Associated with Heightened Neural Responses to Social Exclusion During Adolescence",
-    "authors": [
-      "Geert\u2010Jan Will",
-      "P.A.C. van Lier",
-      "Eveline A. Crone",
-      "Berna G\u00fcro\u011flu"
-    ],
-    "year": 2015,
-    "journal": "Journal of Abnormal Child Psychology",
-    "doi_or_url": "https://doi.org/10.1007/s10802-015-9983-0",
-    "citation_count": 162,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
     "id": "W2140470805",
     "title": "Reducing aggressive responses to social exclusion using transcranial direct current stimulation",
     "authors": [
@@ -303,6 +595,94 @@
     "journal": "Social Cognitive and Affective Neuroscience",
     "doi_or_url": "https://doi.org/10.1093/scan/nsu053",
     "citation_count": 155,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2888861838",
+    "title": "The Multifaceted Nature of Alexithymia \u2013 A Neuroscientific Perspective",
+    "authors": [
+      "Katharina S. Goerlich"
+    ],
+    "year": 2018,
+    "journal": "Frontiers in Psychology",
+    "doi_or_url": "https://doi.org/10.3389/fpsyg.2018.01614",
+    "citation_count": 152,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2008760801",
+    "title": "IFN-Alpha-Induced Cortical and Subcortical Glutamate Changes Assessed by Magnetic Resonance Spectroscopy",
+    "authors": [
+      "Ebrahim Haroon",
+      "Bobbi J. Woolwine",
+      "Xiangchuan Chen",
+      "Thaddeus W. W. Pace",
+      "Samir Parekh",
+      "James R. Spivey",
+      "Xiaoping Hu",
+      "Andrew H. Miller"
+    ],
+    "year": 2014,
+    "journal": "Neuropsychopharmacology",
+    "doi_or_url": "https://doi.org/10.1038/npp.2014.25",
+    "citation_count": 152,
+    "is_high_impact": true,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2942132156",
+    "title": "Bifidobacterium longum 1714\u2122 Strain Modulates Brain Activity of Healthy Volunteers During Social Stress",
+    "authors": [
+      "Huiying Wang",
+      "Christoph Braun",
+      "Eileen F. Murphy",
+      "Paul Enck"
+    ],
+    "year": 2019,
+    "journal": "The American Journal of Gastroenterology",
+    "doi_or_url": "https://doi.org/10.14309/ajg.0000000000000203",
+    "citation_count": 150,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2164165597",
+    "title": "Effects of Direct Social Experience on Trust Decisions and Neural Reward Circuitry",
+    "authors": [
+      "Dominic S. Fareri",
+      "Luke J. Chang",
+      "Mauricio R. Delgado"
+    ],
+    "year": 2012,
+    "journal": "Frontiers in Neuroscience",
+    "doi_or_url": "https://doi.org/10.3389/fnins.2012.00148",
+    "citation_count": 145,
     "is_high_impact": false,
     "open_access": true,
     "used_for": [
@@ -338,6 +718,60 @@
     "notes": ""
   },
   {
+    "id": "W2057099110",
+    "title": "Nonlinear Complexity Analysis of Brain fMRI Signals in Schizophrenia",
+    "authors": [
+      "Moses O. Sokunbi",
+      "Victoria B. Gradin",
+      "Gordon D. Waiter",
+      "G. Gordon Cameron",
+      "Trevor Ahearn",
+      "Alison D. Murray",
+      "J. Douglas Steele",
+      "Roger T. Staff"
+    ],
+    "year": 2014,
+    "journal": "PLoS ONE",
+    "doi_or_url": "https://doi.org/10.1371/journal.pone.0095146",
+    "citation_count": 138,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1948687830",
+    "title": "Early life stress modulates amygdala\u2010prefrontal functional connectivity: Implications for oxytocin effects",
+    "authors": [
+      "Yan Fan",
+      "Ana Luc\u00eda Herrera-Mel\u00e9ndez",
+      "Karin Pestke",
+      "Melanie Feeser",
+      "Sabine Aust",
+      "Christian Otte",
+      "Jens C. Pruessner",
+      "Heinz B\u00f6ker",
+      "Malek Bajbouj",
+      "Simone Grimm"
+    ],
+    "year": 2014,
+    "journal": "Human Brain Mapping",
+    "doi_or_url": "https://doi.org/10.1002/hbm.22553",
+    "citation_count": 137,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W2107794155",
     "title": "An fMRI Investigation of Attributing Negative Social Treatment to Racial Discrimination",
     "authors": [
@@ -350,6 +784,32 @@
     "doi_or_url": "https://doi.org/10.1162/jocn.2010.21520",
     "citation_count": 132,
     "is_high_impact": true,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2496032669",
+    "title": "Effects of Concomitant Stimulation of the GABAergic and Norepinephrine System on Inhibitory Control \u2013 A Study Using Transcutaneous Vagus Nerve Stimulation",
+    "authors": [
+      "Christian Beste",
+      "Laura Steenbergen",
+      "Roberta Sellaro",
+      "Stamatoula Grigoriadou",
+      "Rui Zhang",
+      "Witold X. Chmielewski",
+      "Ann\u2010Kathrin Stock",
+      "Lorenza S. Colzato"
+    ],
+    "year": 2016,
+    "journal": "Brain stimulation",
+    "doi_or_url": "https://doi.org/10.1016/j.brs.2016.07.004",
+    "citation_count": 130,
+    "is_high_impact": false,
     "open_access": true,
     "used_for": [
       "task_workflow",
@@ -388,6 +848,33 @@
     "year": 2009,
     "journal": "Frontiers in Evolutionary Neuroscience",
     "doi_or_url": "https://doi.org/10.3389/neuro.18.001.2009",
+    "citation_count": 116,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2594122305",
+    "title": "The experience of social exclusion in women with a history of suicidal acts: a neuroimaging study",
+    "authors": [
+      "\u00c9milie Oli\u00e9",
+      "Fabrice Jollant",
+      "J\u00e9r\u00e9my Deverdun",
+      "Nicolas Menjot de Champfleur",
+      "Fabienne Cyprien",
+      "Emmanuelle Le Bars",
+      "Thibault Mura",
+      "Alain Bonaf\u00e9",
+      "Philippe Courtet"
+    ],
+    "year": 2017,
+    "journal": "Scientific Reports",
+    "doi_or_url": "https://doi.org/10.1038/s41598-017-00211-x",
     "citation_count": 116,
     "is_high_impact": false,
     "open_access": true,
@@ -614,6 +1101,51 @@
     "notes": ""
   },
   {
+    "id": "W3184873564",
+    "title": "Human versus chatbot: Understanding the role of emotion in health marketing communication for vaccines",
+    "authors": [
+      "Wan\u2010Hsiu Sunny Tsai",
+      "Di Lun",
+      "Nicholas Carcioppolo",
+      "Ching\u2010Hua Chuan"
+    ],
+    "year": 2021,
+    "journal": "Psychology and Marketing",
+    "doi_or_url": "https://doi.org/10.1002/mar.21556",
+    "citation_count": 95,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3007261060",
+    "title": "Behavioral effects of multiple-dose oxytocin treatment in autism: a randomized, placebo-controlled trial with long-term follow-up",
+    "authors": [
+      "Sylvie Bernaerts",
+      "Bart Boets",
+      "Guy Bosmans",
+      "Jean Steyaert",
+      "Kaat Alaerts"
+    ],
+    "year": 2020,
+    "journal": "Molecular Autism",
+    "doi_or_url": "https://doi.org/10.1186/s13229-020-0313-1",
+    "citation_count": 94,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W2096650732",
     "title": "The interactive effect of social pain and executive functioning on aggression: an fMRI experiment",
     "authors": [
@@ -638,6 +1170,51 @@
     "notes": ""
   },
   {
+    "id": "W2202540184",
+    "title": "Salivary Oxytocin Concentrations in Males following Intranasal Administration of Oxytocin: A Double-Blind, Cross-Over Study",
+    "authors": [
+      "Katie Daughters",
+      "Antony S. R. Manstead",
+      "Kelly Hubble",
+      "Aled Rees",
+      "Anita Thapar",
+      "Stephanie van Goozen"
+    ],
+    "year": 2015,
+    "journal": "PLoS ONE",
+    "doi_or_url": "https://doi.org/10.1371/journal.pone.0145104",
+    "citation_count": 93,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2032705776",
+    "title": "Acute effects of intranasal oxytocin on subjective and behavioral responses to social rejection.",
+    "authors": [
+      "Gail A. Alvares",
+      "Ian B. Hickie",
+      "Adam J. Guastella"
+    ],
+    "year": 2010,
+    "journal": "Experimental and Clinical Psychopharmacology",
+    "doi_or_url": "https://doi.org/10.1037/a0019719",
+    "citation_count": 93,
+    "is_high_impact": false,
+    "open_access": false,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W2408605227",
     "title": "When It\u2019s Okay That I Don\u2019t Play",
     "authors": [
@@ -648,6 +1225,94 @@
     "journal": "Personality and Social Psychology Bulletin",
     "doi_or_url": "https://doi.org/10.1177/0146167216649606",
     "citation_count": 92,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2102526097",
+    "title": "Empathy for social exclusion involves the sensory-discriminative component of pain: a within-subject fMRI study",
+    "authors": [
+      "Giovanni Novembre",
+      "Marco Zanon",
+      "Giorgia Silani"
+    ],
+    "year": 2014,
+    "journal": "Social Cognitive and Affective Neuroscience",
+    "doi_or_url": "https://doi.org/10.1093/scan/nsu038",
+    "citation_count": 92,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2148465885",
+    "title": "Bystanders are the Key to Stopping Bullying",
+    "authors": [
+      "Sharon Padgett",
+      "Charles E. Notar"
+    ],
+    "year": 2013,
+    "journal": "Universal Journal of Educational Research",
+    "doi_or_url": "https://doi.org/10.13189/ujer.2013.010201",
+    "citation_count": 90,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2148903354",
+    "title": "Racial Identification, Racial Discrimination, and Substance Use Vulnerability Among African American Young Adults",
+    "authors": [
+      "Michelle L. Stock",
+      "Frederick X. Gibbons",
+      "Laura A. Walsh",
+      "Meg Gerrard"
+    ],
+    "year": 2011,
+    "journal": "Personality and Social Psychology Bulletin",
+    "doi_or_url": "https://doi.org/10.1177/0146167211410574",
+    "citation_count": 87,
+    "is_high_impact": false,
+    "open_access": false,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2127572868",
+    "title": "No Evidence that MDMA-Induced Enhancement of Emotional Empathy Is Related to Peripheral Oxytocin Levels or 5-HT1a Receptor Activation",
+    "authors": [
+      "Kim P. C. Kuypers",
+      "Rafael de la Torre",
+      "Mag\u0131\u0301 Farr\u00e9",
+      "Samanta Yubero\u2010Lahoz",
+      "Isabel Dziobek",
+      "Wouter van den Bos",
+      "Johannes G. Ramaekers"
+    ],
+    "year": 2014,
+    "journal": "PLoS ONE",
+    "doi_or_url": "https://doi.org/10.1371/journal.pone.0100719",
+    "citation_count": 87,
     "is_high_impact": false,
     "open_access": true,
     "used_for": [
@@ -706,6 +1371,50 @@
     "citation_count": 85,
     "is_high_impact": false,
     "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2040140561",
+    "title": "MDMA decreases the effects of simulated social rejection",
+    "authors": [
+      "Charles G. Frye",
+      "Margaret C. Wardle",
+      "Greg J. Norman",
+      "Harriet de Wit"
+    ],
+    "year": 2013,
+    "journal": "Pharmacology Biochemistry and Behavior",
+    "doi_or_url": "https://doi.org/10.1016/j.pbb.2013.11.030",
+    "citation_count": 85,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2172169029",
+    "title": "A Laboratory-Based Examination of Responses to Social Rejection in Borderline Personality Disorder: The Mediating Role of Emotion Dysregulation",
+    "authors": [
+      "Kim L. Gratz",
+      "Katherine L. Dixon\u2013Gordon",
+      "Alisa Breetz",
+      "Matthew T. Tull"
+    ],
+    "year": 2013,
+    "journal": "Journal of Personality Disorders",
+    "doi_or_url": "https://doi.org/10.1521/pedi.2013.27.2.157",
+    "citation_count": 81,
+    "is_high_impact": false,
+    "open_access": false,
     "used_for": [
       "task_workflow",
       "timing_parameters"
@@ -807,6 +1516,32 @@
     "notes": ""
   },
   {
+    "id": "W2905659403",
+    "title": "Neural and Behavioral Correlates of Sacred Values and Vulnerability to Violent Extremism",
+    "authors": [
+      "Clara Pretus",
+      "Nafees Hamid",
+      "Hammad Sheikh",
+      "Jeremy Ginges",
+      "Adolf Tobe\u00f1a",
+      "Richard E. Davis",
+      "\u00d3scar Vilarroya",
+      "Scott Atran"
+    ],
+    "year": 2018,
+    "journal": "Frontiers in Psychology",
+    "doi_or_url": "https://doi.org/10.3389/fpsyg.2018.02462",
+    "citation_count": 80,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W4234729651",
     "title": "Vicarious ostracism",
     "authors": [
@@ -818,6 +1553,52 @@
     "journal": "Frontiers in Human Neuroscience",
     "doi_or_url": "https://doi.org/10.3389/fnhum.2013.00153",
     "citation_count": 79,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2569812262",
+    "title": "Real-life prosocial behavior decreases after being socially excluded by avatars, not agents",
+    "authors": [
+      "Oswald D. Kothgassner",
+      "Mirjam Griesinger",
+      "Kathrin Kettner",
+      "Katja Wayan",
+      "Sabine V\u00f6lkl-Kernstock",
+      "Helmut Hlavacs",
+      "Leon Beutl",
+      "Anna Felnhofer"
+    ],
+    "year": 2017,
+    "journal": "Computers in Human Behavior",
+    "doi_or_url": "https://doi.org/10.1016/j.chb.2016.12.059",
+    "citation_count": 76,
+    "is_high_impact": false,
+    "open_access": false,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2112736250",
+    "title": "Power increases performance in a social evaluation situation as a result of decreased stress responses",
+    "authors": [
+      "Petra C. Schmid",
+      "Marianne Schmid Mast"
+    ],
+    "year": 2013,
+    "journal": "European Journal of Social Psychology",
+    "doi_or_url": "https://doi.org/10.1002/ejsp.1937",
+    "citation_count": 72,
     "is_high_impact": false,
     "open_access": true,
     "used_for": [
@@ -841,6 +1622,34 @@
     "year": 2017,
     "journal": "Scientific Reports",
     "doi_or_url": "https://doi.org/10.1038/srep40180",
+    "citation_count": 72,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1995126515",
+    "title": "Enhanced neural responses to rule violation in children with autism: A comparison to social exclusion",
+    "authors": [
+      "Danielle Bolling",
+      "Naomi B. Pitskel",
+      "Ben Deen",
+      "Michael J. Crowley",
+      "James C. McPartland",
+      "Martha D. Kaiser",
+      "Brent C. Vander Wyk",
+      "Jia Wu",
+      "Linda C. Mayes",
+      "Kevin A. Pelphrey"
+    ],
+    "year": 2011,
+    "journal": "Developmental Cognitive Neuroscience",
+    "doi_or_url": "https://doi.org/10.1016/j.dcn.2011.02.002",
     "citation_count": 72,
     "is_high_impact": false,
     "open_access": true,
@@ -898,6 +1707,27 @@
     "notes": ""
   },
   {
+    "id": "W2048459339",
+    "title": "A Matter of Vertical Position",
+    "authors": [
+      "Christiane Schoel",
+      "Jennifer Eck",
+      "Rainer Greifeneder"
+    ],
+    "year": 2013,
+    "journal": "Social Psychological and Personality Science",
+    "doi_or_url": "https://doi.org/10.1177/1948550613488953",
+    "citation_count": 70,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W2309429244",
     "title": "Children\u2019s Elementary School Social Experience and Executive Functions Development: Introduction to a Special Section",
     "authors": [
@@ -908,6 +1738,73 @@
     "journal": "Journal of Abnormal Child Psychology",
     "doi_or_url": "https://doi.org/10.1007/s10802-015-0113-9",
     "citation_count": 69,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2151370328",
+    "title": "The heart-break of social rejection versus the brain wave of social acceptance",
+    "authors": [
+      "Frederik M. van der Veen",
+      "Maurits W. van der Molen",
+      "Priya P. Sahibdin",
+      "Ingmar H. A. Franken"
+    ],
+    "year": 2013,
+    "journal": "Social Cognitive and Affective Neuroscience",
+    "doi_or_url": "https://doi.org/10.1093/scan/nst120",
+    "citation_count": 68,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1990256485",
+    "title": "Behavioral methods of assessing forgiveness",
+    "authors": [
+      "Karl Dorn",
+      "Joshua N. Hook",
+      "Don E. Davis",
+      "Daryl R. Van Tongeren",
+      "Everett L. Worthington"
+    ],
+    "year": 2013,
+    "journal": "The Journal of Positive Psychology",
+    "doi_or_url": "https://doi.org/10.1080/17439760.2013.844267",
+    "citation_count": 68,
+    "is_high_impact": false,
+    "open_access": false,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2132506350",
+    "title": "Distress of ostracism: oxytocin receptor gene polymorphism confers sensitivity to social exclusion",
+    "authors": [
+      "Robyn J. McQuaid",
+      "Opal A. McInnis",
+      "Kimberly Matheson",
+      "Hymie Anisman"
+    ],
+    "year": 2015,
+    "journal": "Social Cognitive and Affective Neuroscience",
+    "doi_or_url": "https://doi.org/10.1093/scan/nsu166",
+    "citation_count": 67,
     "is_high_impact": false,
     "open_access": true,
     "used_for": [
@@ -1052,6 +1949,53 @@
     "notes": ""
   },
   {
+    "id": "W2765862286",
+    "title": "Popularity, likeability, and peer conformity: Four field experiments",
+    "authors": [
+      "Rob Gommans",
+      "Marlene J. Sandstrom",
+      "Gonneke W. J. M. Stevens",
+      "Tom ter Bogt",
+      "Antonius H. N. Cillessen"
+    ],
+    "year": 2017,
+    "journal": "Journal of Experimental Social Psychology",
+    "doi_or_url": "https://doi.org/10.1016/j.jesp.2017.10.001",
+    "citation_count": 63,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2018173734",
+    "title": "Impact of simulated ostracism on overweight and normal-weight youths\u2019 motivation to eat and food intake",
+    "authors": [
+      "Sarah\u2010Jeanne Salvy",
+      "Julie C. Bowker",
+      "Lauren A. Nitecki",
+      "Melissa A. Kluczynski",
+      "Lisa J. Germeroth",
+      "James N. Roemmich"
+    ],
+    "year": 2010,
+    "journal": "Appetite",
+    "doi_or_url": "https://doi.org/10.1016/j.appet.2010.11.140",
+    "citation_count": 62,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W2769257575",
     "title": "Differential Neural Processing of Social Exclusion and Inclusion in Adolescents with Non-Suicidal Self-Injury and Young Adults with Borderline Personality Disorder",
     "authors": [
@@ -1097,6 +2041,26 @@
     "notes": ""
   },
   {
+    "id": "W2495394026",
+    "title": "Decisions in the face of known risks: Ostracism increases risky decision-making",
+    "authors": [
+      "Melissa T. Buelow",
+      "James H. Wirth"
+    ],
+    "year": 2016,
+    "journal": "Journal of Experimental Social Psychology",
+    "doi_or_url": "https://doi.org/10.1016/j.jesp.2016.07.006",
+    "citation_count": 61,
+    "is_high_impact": false,
+    "open_access": false,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W1823186012",
     "title": "Pain Processing after Social Exclusion and Its Relation to Rejection Sensitivity in Borderline Personality Disorder",
     "authors": [
@@ -1112,6 +2076,31 @@
     "journal": "PLoS ONE",
     "doi_or_url": "https://doi.org/10.1371/journal.pone.0133693",
     "citation_count": 61,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1846667482",
+    "title": "Failed Replication of Oxytocin Effects on Trust: The Envelope Task Case",
+    "authors": [
+      "Anthony Lane",
+      "Mo\u00efra Mikolajczak",
+      "Evelyne Treinen",
+      "Dana Samson",
+      "Olivier Corneille",
+      "Philippe de Timary",
+      "Olivier Luminet"
+    ],
+    "year": 2015,
+    "journal": "PLoS ONE",
+    "doi_or_url": "https://doi.org/10.1371/journal.pone.0137000",
+    "citation_count": 59,
     "is_high_impact": false,
     "open_access": true,
     "used_for": [
@@ -1163,6 +2152,48 @@
     "citation_count": 59,
     "is_high_impact": false,
     "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2961625819",
+    "title": "Defending victims of bullying in the classroom: The role of moral responsibility and social costs",
+    "authors": [
+      "J. Loes Pouwels",
+      "Tirza H. J. van Noorden",
+      "Simona Carla Silvia Caravita"
+    ],
+    "year": 2019,
+    "journal": "Journal of Experimental Social Psychology",
+    "doi_or_url": "https://doi.org/10.1016/j.jesp.2019.103831",
+    "citation_count": 58,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2099471575",
+    "title": "The Effect of Simulated Ostracism on Physical Activity Behavior in Children",
+    "authors": [
+      "Jacob E. Barkley",
+      "Sarah\u2010Jeanne Salvy",
+      "James N. Roemmich"
+    ],
+    "year": 2012,
+    "journal": "PEDIATRICS",
+    "doi_or_url": "https://doi.org/10.1542/peds.2011-0496",
+    "citation_count": 57,
+    "is_high_impact": false,
+    "open_access": false,
     "used_for": [
       "task_workflow",
       "timing_parameters"
@@ -1240,6 +2271,31 @@
     "notes": ""
   },
   {
+    "id": "W4385334794",
+    "title": "The VLPFC-Engaged Voluntary Emotion Regulation: Combined TMS-fMRI Evidence for the Neural Circuit of Cognitive Reappraisal",
+    "authors": [
+      "Zhenhong He",
+      "Sijin Li",
+      "Licheng Mo",
+      "Zixin Zheng",
+      "Yiwei Li",
+      "Hong Li",
+      "Dandan Zhang"
+    ],
+    "year": 2023,
+    "journal": "Journal of Neuroscience",
+    "doi_or_url": "https://doi.org/10.1523/jneurosci.1337-22.2023",
+    "citation_count": 54,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W3135092775",
     "title": "Social Exclusion, Self-Forgiveness, Mindfulness, and Internet Addiction in College Students: a Moderated Mediation Approach",
     "authors": [
@@ -1300,6 +2356,71 @@
     "notes": ""
   },
   {
+    "id": "W2904202381",
+    "title": "A causal role for right temporo-parietal junction in signaling moral conflict",
+    "authors": [
+      "Ignacio Obeso",
+      "Marius Moisa",
+      "Christian C. Ruff",
+      "Jean\u2010Claude Dreher"
+    ],
+    "year": 2018,
+    "journal": "eLife",
+    "doi_or_url": "https://doi.org/10.7554/elife.40671",
+    "citation_count": 54,
+    "is_high_impact": true,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2546057841",
+    "title": "Effects of Oxytocin and Vasopressin on Preferential Brain Responses to Negative Social Feedback",
+    "authors": [
+      "Marta Gozzi",
+      "Erica M Dashow",
+      "Audrey Thurm",
+      "Susan E. Swedo",
+      "Caroline F. Zink"
+    ],
+    "year": 2016,
+    "journal": "Neuropsychopharmacology",
+    "doi_or_url": "https://doi.org/10.1038/npp.2016.248",
+    "citation_count": 53,
+    "is_high_impact": true,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2060755517",
+    "title": "Ostracism in childhood and adolescence: Emotional, cognitive, and behavioral effects of social exclusion",
+    "authors": [
+      "Ralf W\u00f6lfer",
+      "Herbert Scheithauer"
+    ],
+    "year": 2012,
+    "journal": "Social Influence",
+    "doi_or_url": "https://doi.org/10.1080/15534510.2012.706233",
+    "citation_count": 50,
+    "is_high_impact": false,
+    "open_access": false,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W2467612378",
     "title": "Patients Are Socially Excluded When Their Pain Has No Medical Explanation",
     "authors": [
@@ -1332,6 +2453,28 @@
     "year": 2016,
     "journal": "Cognitive Affective & Behavioral Neuroscience",
     "doi_or_url": "https://doi.org/10.3758/s13415-016-0412-9",
+    "citation_count": 49,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1897726106",
+    "title": "The neural basis of the abnormal self\u2010referential processing and its impact on cognitive control in depressed patients",
+    "authors": [
+      "Gerd Wagner",
+      "Claudia Schachtzabel",
+      "Gregor Peikert",
+      "Karl\u2010J\u00fcrgen B\u00e4r"
+    ],
+    "year": 2015,
+    "journal": "Human Brain Mapping",
+    "doi_or_url": "https://doi.org/10.1002/hbm.22807",
     "citation_count": 49,
     "is_high_impact": false,
     "open_access": true,
@@ -1391,6 +2534,33 @@
     "notes": ""
   },
   {
+    "id": "W2410180133",
+    "title": "Efficacy of the Video-feedback Intervention to promote Positive Parenting and Sensitive Discipline in Twin Families (VIPP-Twins): Study protocol for a randomized controlled trial",
+    "authors": [
+      "Saskia Euser",
+      "Marian J. Bakermans\u2010Kranenburg",
+      "Bianca G. van den Bulk",
+      "Mari\u00eblle Linting",
+      "Rani C. Damsteegt",
+      "Claudia I. Vrijhof",
+      "Ilse C. van Wijk",
+      "Eveline A. Crone",
+      "Marinus H. van IJzendoorn"
+    ],
+    "year": 2016,
+    "journal": "BMC Psychology",
+    "doi_or_url": "https://doi.org/10.1186/s40359-016-0139-y",
+    "citation_count": 48,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
     "id": "W2752666787",
     "title": "Ostracism via virtual chat room\u2014Effects on basic needs, anger and pain",
     "authors": [
@@ -1429,6 +2599,77 @@
     "journal": "Frontiers in Psychology",
     "doi_or_url": "https://doi.org/10.3389/fpsyg.2021.670065",
     "citation_count": 45,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2806707068",
+    "title": "Heritability of neural reactions to social exclusion and prosocial compensation in middle childhood",
+    "authors": [
+      "Mara van der Meulen",
+      "Nikolaus Steinbeis",
+      "Michelle Achterberg",
+      "Marinus H. van IJzendoorn",
+      "Eveline A. Crone"
+    ],
+    "year": 2018,
+    "journal": "Developmental Cognitive Neuroscience",
+    "doi_or_url": "https://doi.org/10.1016/j.dcn.2018.05.010",
+    "citation_count": 44,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3195746727",
+    "title": "Peer Connectedness and Pre\u2010Existing Social Reward Processing Predicts U.S. Adolescent Girls\u2019 Suicidal Ideation During COVID\u201019",
+    "authors": [
+      "Emily Hutchinson",
+      "Stefanie Sequeira",
+      "Jennifer S. Silk",
+      "Neil Jones",
+      "Caroline W. Oppenheimer",
+      "Lori N. Scott",
+      "Cecile D. Ladouceur"
+    ],
+    "year": 2021,
+    "journal": "Journal of Research on Adolescence",
+    "doi_or_url": "https://doi.org/10.1111/jora.12652",
+    "citation_count": 44,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2784544825",
+    "title": "Does Workplace Incivility &amp; Workplace Ostracism influence the Employees\u00e2 Turnover Intentions? Mediating Role of Burnout and Job Stress &amp; Moderating Role of psychological Capital",
+    "authors": [
+      "Zainab Mahfooz",
+      "Aniqa Arshad",
+      "Qasim Ali Nisar",
+      "Maryam Ikram",
+      "Muhammad Umer Azeem"
+    ],
+    "year": 2017,
+    "journal": "International Journal of Academic Research in Business and Social Sciences",
+    "doi_or_url": "https://doi.org/10.6007/ijarbss/v7-i8/3244",
+    "citation_count": 43,
     "is_high_impact": false,
     "open_access": true,
     "used_for": [
@@ -1492,1244 +2733,6 @@
     "journal": "Human Ethology",
     "doi_or_url": "https://doi.org/10.22330/001c.89815",
     "citation_count": 42,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2015259066",
-    "title": "Play it again: neural responses to reunion with excluders predicted by attachment patterns",
-    "authors": [
-      "Lars O. White",
-      "Jia Wu",
-      "Jessica L. Borelli",
-      "Linda C. Mayes",
-      "Michael J. Crowley"
-    ],
-    "year": 2013,
-    "journal": "Developmental Science",
-    "doi_or_url": "https://doi.org/10.1111/desc.12035",
-    "citation_count": 40,
-    "is_high_impact": false,
-    "open_access": false,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2133047007",
-    "title": "Adolescent neighborhood quality predicts adult dACC response to social exclusion",
-    "authors": [
-      "Marlen Z. Gonzalez",
-      "Lane Beckes",
-      "Joanna M. Chango",
-      "Joseph P. Allen",
-      "James A. Coan"
-    ],
-    "year": 2014,
-    "journal": "Social Cognitive and Affective Neuroscience",
-    "doi_or_url": "https://doi.org/10.1093/scan/nsu137",
-    "citation_count": 40,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2107400239",
-    "title": "Resilience to Ostracism: A Qualitative Inquiry",
-    "authors": [
-      "Daniel Waldeck",
-      "Ian Tyndall",
-      "Nik Chmiel"
-    ],
-    "year": 2015,
-    "journal": "The Qualitative Report",
-    "doi_or_url": "https://doi.org/10.46743/2160-3715/2015.2346",
-    "citation_count": 39,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2949029211",
-    "title": "Negative affect moderates the effect of social rejection on frontal and anterior cingulate cortex activation in borderline personality disorder",
-    "authors": [
-      "Johannes Wrege",
-      "Anthony C. Ruocco",
-      "Sebastian Euler",
-      "Katrin H. Preller",
-      "Mareike Busmann",
-      "Louisa Meya",
-      "Andr\u00e9 Schmidt",
-      "Undine E. Lang",
-      "Stefan Borgwardt",
-      "Marc Walter"
-    ],
-    "year": 2019,
-    "journal": "Cognitive Affective & Behavioral Neuroscience",
-    "doi_or_url": "https://doi.org/10.3758/s13415-019-00716-0",
-    "citation_count": 39,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W3035763749",
-    "title": "Amplified Concern for Social Risk in Adolescence: Development and Validation of a New Measure",
-    "authors": [
-      "Jack L. Andrews",
-      "Lucy Foulkes",
-      "Jessica K. Bone",
-      "Sarah\u2010Jayne Blakemore"
-    ],
-    "year": 2020,
-    "journal": "Brain Sciences",
-    "doi_or_url": "https://doi.org/10.3390/brainsci10060397",
-    "citation_count": 38,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2573197647",
-    "title": "Oxytocin biases men but not women to restore social connections with individuals who socially exclude them",
-    "authors": [
-      "Xiaolei Xu",
-      "Shuxia Yao",
-      "Lei Xu",
-      "Yayuan Geng",
-      "Weihua Zhao",
-      "Xiaole Ma",
-      "Juan Kou",
-      "Ruixue Luo",
-      "Keith M. Kendrick"
-    ],
-    "year": 2017,
-    "journal": "Scientific Reports",
-    "doi_or_url": "https://doi.org/10.1038/srep40589",
-    "citation_count": 37,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2890081955",
-    "title": "Attachment buffers the physiological impact of social exclusion",
-    "authors": [
-      "Belinda J. Liddell",
-      "Bronte S. Courtney"
-    ],
-    "year": 2018,
-    "journal": "PLoS ONE",
-    "doi_or_url": "https://doi.org/10.1371/journal.pone.0203287",
-    "citation_count": 37,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2096002312",
-    "title": "Abnormal Neural Responses to Social Exclusion in Schizophrenia",
-    "authors": [
-      "Victoria B. Gradin",
-      "Gordon D. Waiter",
-      "Poornima Kumar",
-      "Catriona Stickle",
-      "Maarten Milders",
-      "K. Matthews",
-      "Ian Reid",
-      "J\u00e9r\u00e9my Hall",
-      "J. Douglas Steele"
-    ],
-    "year": 2012,
-    "journal": "PLoS ONE",
-    "doi_or_url": "https://doi.org/10.1371/journal.pone.0042608",
-    "citation_count": 36,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2897460510",
-    "title": "Object attachment: Humanness increases sentimental and instrumental values",
-    "authors": [
-      "Cathy Kwok",
-      "Jessica R. Grisham",
-      "Melissa M. Norberg"
-    ],
-    "year": 2018,
-    "journal": "Journal of Behavioral Addictions",
-    "doi_or_url": "https://doi.org/10.1556/2006.7.2018.98",
-    "citation_count": 36,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W4200289846",
-    "title": "ISIEA: An image database of social inclusion and exclusion in young Asian adults",
-    "authors": [
-      "Zixin Zheng",
-      "Sijin Li",
-      "Licheng Mo",
-      "Weimao Chen",
-      "Dandan Zhang"
-    ],
-    "year": 2021,
-    "journal": "Behavior Research Methods",
-    "doi_or_url": "https://doi.org/10.3758/s13428-021-01736-w",
-    "citation_count": 35,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W3163480773",
-    "title": "Distress and retaliatory aggression in response to witnessing intergroup exclusion are greater on higher levels of collective narcissism",
-    "authors": [
-      "Adrian Hase",
-      "Maciej Behnke",
-      "Magdalena Mazurkiewicz",
-      "Kamil Kordian Wieteska",
-      "Agnieszka Golec de Zavala"
-    ],
-    "year": 2021,
-    "journal": "Psychophysiology",
-    "doi_or_url": "https://doi.org/10.1111/psyp.13879",
-    "citation_count": 34,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2734442859",
-    "title": "Self-viewing is associated with negative affect rather than reward in highly narcissistic men: an fMRI study",
-    "authors": [
-      "Emanuel Jauk",
-      "Mathias Benedek",
-      "Karl Koschutnig",
-      "Gayann\u00e9e Kedia",
-      "Aljoscha C. Neubauer"
-    ],
-    "year": 2017,
-    "journal": "Scientific Reports",
-    "doi_or_url": "https://doi.org/10.1038/s41598-017-03935-y",
-    "citation_count": 34,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2789262297",
-    "title": "Heightened Salience of Anger and Aggression in Female Adolescents With Borderline Personality Disorder\u2014A Script-Based fMRI Study",
-    "authors": [
-      "Marlene Krauch",
-      "Kai Ueltzh\u00f6ffer",
-      "Romuald Brunner",
-      "Michael Kaess",
-      "Saskia Hensel",
-      "Sabine C. Herpertz",
-      "Katja Bertsch"
-    ],
-    "year": 2018,
-    "journal": "Frontiers in Behavioral Neuroscience",
-    "doi_or_url": "https://doi.org/10.3389/fnbeh.2018.00057",
-    "citation_count": 33,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W4221103169",
-    "title": "Afraid of Social Exclusion: Fear of Missing Out Predicts Cyberball-Induced Ostracism",
-    "authors": [
-      "Alex J. Holte",
-      "Wendy N. Fisher",
-      "F. Richard Ferraro"
-    ],
-    "year": 2022,
-    "journal": "Journal of Technology in Behavioral Science",
-    "doi_or_url": "https://doi.org/10.1007/s41347-022-00251-9",
-    "citation_count": 33,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W3116312581",
-    "title": "Cyberostracism: Emotional and behavioral consequences in social media interactions",
-    "authors": [
-      "Simona Galbav\u00e1",
-      "Hana Mach\u00e1\u010dkov\u00e1",
-      "Lenka D\u011bdkov\u00e1"
-    ],
-    "year": 2020,
-    "journal": "Comunicar",
-    "doi_or_url": "https://doi.org/10.3916/c67-2021-01",
-    "citation_count": 33,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W4283750943",
-    "title": "Feeling Ostracized by Others\u2019 Smartphone Use: The Effect of Phubbing on Fundamental Needs, Mood, and Trust",
-    "authors": [
-      "Judith Knausenberger",
-      "Anna Giesen-Leuchter",
-      "Gerald Echterhoff"
-    ],
-    "year": 2022,
-    "journal": "Frontiers in Psychology",
-    "doi_or_url": "https://doi.org/10.3389/fpsyg.2022.883901",
-    "citation_count": 32,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2600320329",
-    "title": "Dull to Social Acceptance Rather than Sensitivity to Social Ostracism in Interpersonal Interaction for Depression: Behavioral and Electrophysiological Evidence from Cyberball Tasks",
-    "authors": [
-      "Qing Zhang",
-      "Xiaosi Li",
-      "Kai Wang",
-      "Xiaoqin Zhou",
-      "Yi Dong",
-      "Lei Zhang",
-      "Wen Xie",
-      "Jingjing Mu",
-      "Hongchen Li",
-      "Chunyan Zhu",
-      "Fengqiong Yu"
-    ],
-    "year": 2017,
-    "journal": "Frontiers in Human Neuroscience",
-    "doi_or_url": "https://doi.org/10.3389/fnhum.2017.00162",
-    "citation_count": 32,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2076558336",
-    "title": "Not all rejections are alike; competence and warmth as a fundamental distinction in social rejection",
-    "authors": [
-      "P\u0131nar \u00c7elik",
-      "Joris Lammers",
-      "Ilja van Beest",
-      "Marrie H. J. Bekker",
-      "Roos Vonk"
-    ],
-    "year": 2013,
-    "journal": "Journal of Experimental Social Psychology",
-    "doi_or_url": "https://doi.org/10.1016/j.jesp.2013.02.010",
-    "citation_count": 32,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W4298142708",
-    "title": "The relationship between parental phubbing and learning burnout of elementary and secondary school students: The mediating roles of parent-child attachment and ego depletion",
-    "authors": [
-      "Qingqing He",
-      "Zhao Bi-hua",
-      "Wei Hua",
-      "Feng Huang"
-    ],
-    "year": 2022,
-    "journal": "Frontiers in Psychology",
-    "doi_or_url": "https://doi.org/10.3389/fpsyg.2022.963492",
-    "citation_count": 31,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2082154315",
-    "title": "Are there benefits of social overinclusion? Behavioral and ERP effects in the Cyberball paradigm",
-    "authors": [
-      "Michael Niedeggen",
-      "Natia Sarauli",
-      "Santi Cacciola",
-      "Sarah Weschke"
-    ],
-    "year": 2014,
-    "journal": "Frontiers in Human Neuroscience",
-    "doi_or_url": "https://doi.org/10.3389/fnhum.2014.00935",
-    "citation_count": 31,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2134833770",
-    "title": "Exploring the Structure of Human Defensive Responses from Judgments of Threat Scenarios",
-    "authors": [
-      "Laura Harrison",
-      "Curie Ahn",
-      "Ralph Adolphs"
-    ],
-    "year": 2015,
-    "journal": "PLoS ONE",
-    "doi_or_url": "https://doi.org/10.1371/journal.pone.0133682",
-    "citation_count": 31,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2605062222",
-    "title": "Keeping the Spirits Up: The Effect of Teachers\u2019 and Parents\u2019 Emotional Support on Children\u2019s Working Memory Performance",
-    "authors": [
-      "Loren Vandenbroucke",
-      "Jantine L. Spilt",
-      "Karine Verschueren",
-      "Dieter Baeyens"
-    ],
-    "year": 2017,
-    "journal": "Frontiers in Psychology",
-    "doi_or_url": "https://doi.org/10.3389/fpsyg.2017.00512",
-    "citation_count": 31,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2145763350",
-    "title": "Trait rejection sensitivity is associated with vigilance and defensive response rather than detection of social rejection cues",
-    "authors": [
-      "Taishi Kawamoto",
-      "Hiroshi Nittono",
-      "Mitsuhiro Ura"
-    ],
-    "year": 2015,
-    "journal": "Frontiers in Psychology",
-    "doi_or_url": "https://doi.org/10.3389/fpsyg.2015.01516",
-    "citation_count": 30,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2903282702",
-    "title": "Neural Correlates of Social Inclusion in Borderline Personality Disorder",
-    "authors": [
-      "Kathrin Malejko",
-      "Dominik Neff",
-      "Rebecca C. Brown",
-      "Paul L. Plener",
-      "Martina Bonenberger",
-      "Birgit Abler",
-      "Heiko Graf"
-    ],
-    "year": 2018,
-    "journal": "Frontiers in Psychiatry",
-    "doi_or_url": "https://doi.org/10.3389/fpsyt.2018.00653",
-    "citation_count": 29,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W1981071565",
-    "title": "Are You Being Rejected or Excluded? Insights from Neuroimaging Studies Using Different Rejection Paradigms",
-    "authors": [
-      "Preethi Premkumar"
-    ],
-    "year": 2012,
-    "journal": "Clinical Psychopharmacology and Neuroscience",
-    "doi_or_url": "https://doi.org/10.9758/cpn.2012.10.3.144",
-    "citation_count": 29,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2099752570",
-    "title": "The Effect of the Physical Presence of Co-Players on Perceived Ostracism and Event-Related Brain Potentials in the Cyberball Paradigm",
-    "authors": [
-      "Sarah Weschke",
-      "Michael Niedeggen"
-    ],
-    "year": 2013,
-    "journal": "PLoS ONE",
-    "doi_or_url": "https://doi.org/10.1371/journal.pone.0071928",
-    "citation_count": 29,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2553530042",
-    "title": "How children\u2019s victimization relates to distorted versus sensitive social cognition: Perception, mood, and need fulfillment in response to Cyberball inclusion and exclusion",
-    "authors": [
-      "Tessa A. M. Lansu",
-      "Tirza H. J. van Noorden",
-      "Marike H. F. Deutz"
-    ],
-    "year": 2016,
-    "journal": "Journal of Experimental Child Psychology",
-    "doi_or_url": "https://doi.org/10.1016/j.jecp.2016.10.012",
-    "citation_count": 29,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2594965252",
-    "title": "Neural responses to social exclusion in adolescents: Effects of peer status",
-    "authors": [
-      "Erik de Water",
-      "Gabry W. Mies",
-      "Ili Ma",
-      "Maarten Mennes",
-      "Antonius H. N. Cillessen",
-      "Anouk Scheres"
-    ],
-    "year": 2017,
-    "journal": "Cortex",
-    "doi_or_url": "https://doi.org/10.1016/j.cortex.2017.02.018",
-    "citation_count": 29,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W1603012587",
-    "title": "fMRI Study of Social Anxiety during Social Ostracism with and without Emotional Support",
-    "authors": [
-      "Yoshiko Nishiyama",
-      "Yasumasa Okamoto",
-      "Yoshihiko Kunisato",
-      "Go Okada",
-      "Shinpei Yoshimura",
-      "Yoshihiro Kanai",
-      "Takanao Yamamura",
-      "Atsuo Yoshino",
-      "Ran Jinnin",
-      "Koki Takagaki",
-      "Keiichi Onoda",
-      "Shigeto Yamawaki"
-    ],
-    "year": 2015,
-    "journal": "PLoS ONE",
-    "doi_or_url": "https://doi.org/10.1371/journal.pone.0127426",
-    "citation_count": 28,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2803688837",
-    "title": "Incidental ostracism emerges from simple learning mechanisms",
-    "authors": [
-      "Bj\u00f6rn Lindstr\u00f6m",
-      "Philippe N. Tobler"
-    ],
-    "year": 2018,
-    "journal": "Nature Human Behaviour",
-    "doi_or_url": "https://doi.org/10.1038/s41562-018-0355-y",
-    "citation_count": 28,
-    "is_high_impact": true,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2523328147",
-    "title": "Unanimous versus partial rejection: How the number of excluders influences the impact of ostracism in children",
-    "authors": [
-      "Marlene J. Sandstrom",
-      "Marike H. F. Deutz",
-      "Tessa A. M. Lansu",
-      "Tirza H. J. van Noorden",
-      "Johan C. Karremans",
-      "Antonius H. N. Cillessen"
-    ],
-    "year": 2016,
-    "journal": "Aggressive Behavior",
-    "doi_or_url": "https://doi.org/10.1002/ab.21674",
-    "citation_count": 28,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W1496719804",
-    "title": "Do Victimization Experiences Accentuate Reactions to Ostracism? An Experiment Using Cyberball",
-    "authors": [
-      "Sabrina Ruggieri",
-      "Mons Bendixen",
-      "Ute Gabriel",
-      "Fran\u00e7oise D. Alsaker"
-    ],
-    "year": 2013,
-    "journal": "International Journal of Developmental Science",
-    "doi_or_url": "https://doi.org/10.3233/dev-1312114",
-    "citation_count": 28,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2947385894",
-    "title": "Oxytocin Facilitates Self-Serving Rather Than Altruistic Tendencies in Competitive Social Interactions Via Orbitofrontal Cortex",
-    "authors": [
-      "Xiaolei Xu",
-      "Congcong Liu",
-      "Xinqi Zhou",
-      "Yuanshu Chen",
-      "Zhao Gao",
-      "Feng Zhou",
-      "Juan Kou",
-      "Benjamin Becker",
-      "Keith M. Kendrick"
-    ],
-    "year": 2019,
-    "journal": "The International Journal of Neuropsychopharmacology",
-    "doi_or_url": "https://doi.org/10.1093/ijnp/pyz028",
-    "citation_count": 27,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W3210782128",
-    "title": "Ostracism, Psychological Capital, Perceived Social Support and Depression among Economically Disadvantaged Youths: A Moderated Mediation Model",
-    "authors": [
-      "Xianglian Yu",
-      "Lin Zhang",
-      "Zihong Lin",
-      "Zongkui Zhou",
-      "Dilana Hazer-Rau",
-      "Pinlin Li",
-      "Wenlong Ji",
-      "Hanbing Zhang",
-      "Tong Wu"
-    ],
-    "year": 2021,
-    "journal": "International Journal of Environmental Research and Public Health",
-    "doi_or_url": "https://doi.org/10.3390/ijerph182111282",
-    "citation_count": 27,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2509333979",
-    "title": "The Pizzagame: A virtual public goods game to assess cooperative behavior in children and adolescents",
-    "authors": [
-      "Jan Keil",
-      "Andrea Michel",
-      "Fabio Sticca",
-      "Kristina Leipold",
-      "Annette M. Klein",
-      "Susan Sierau",
-      "Kai von Klitzing",
-      "Lars O. White"
-    ],
-    "year": 2016,
-    "journal": "Behavior Research Methods",
-    "doi_or_url": "https://doi.org/10.3758/s13428-016-0799-9",
-    "citation_count": 27,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W3006621569",
-    "title": "Feeling left out or just surprised? Neural correlates of social exclusion and overinclusion in adolescence",
-    "authors": [
-      "Theresa W Cheng",
-      "Nandita Vijayakumar",
-      "John C. Flournoy",
-      "Zde\u0148a Op de Macks",
-      "Shannon J. Peake",
-      "Jessica Flannery",
-      "Arian Mobasser",
-      "Sarah Alberti",
-      "Philip A. Fisher",
-      "Jennifer H. Pfeifer"
-    ],
-    "year": 2020,
-    "journal": "Cognitive Affective & Behavioral Neuroscience",
-    "doi_or_url": "https://doi.org/10.3758/s13415-020-00772-x",
-    "citation_count": 27,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2033051568",
-    "title": "Being \u00e2\u20ac\u0153in\u00e2\u20ac or \u00e2\u20ac\u0153out\u00e2\u20ac of the game: subjective and acoustic reactions to exclusion and popularity in social anxiety",
-    "authors": [
-      "Eva Gilboa\u2010Schechtman",
-      "Lior Galili",
-      "Yair Sahar",
-      "Ofer Amir"
-    ],
-    "year": 2014,
-    "journal": "Frontiers in Human Neuroscience",
-    "doi_or_url": "https://doi.org/10.3389/fnhum.2014.00147",
-    "citation_count": 27,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2947842890",
-    "title": "Participants Over-Estimate How Helpful They Are in a Two-Player Game Scenario Toward an Artificial Confederate That Discloses a Diagnosis of Autism",
-    "authors": [
-      "Brett Heasman",
-      "Alex Gillespie"
-    ],
-    "year": 2019,
-    "journal": "Frontiers in Psychology",
-    "doi_or_url": "https://doi.org/10.3389/fpsyg.2019.01349",
-    "citation_count": 27,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W4214727877",
-    "title": "A thematic analysis of students' perceptions and experiences of bullying in UK higher education",
-    "authors": [
-      "Emma Harrison",
-      "Julie A. Hulme",
-      "Claire L. Fox"
-    ],
-    "year": 2022,
-    "journal": "Europe\u2019s Journal of Psychology",
-    "doi_or_url": "https://doi.org/10.5964/ejop.3669",
-    "citation_count": 27,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2134749282",
-    "title": "The Relationship between Trait Emotional Intelligence and Interaction with Ostracized Others' Retaliation",
-    "authors": [
-      "Yuki Nozaki",
-      "Masuo Koyasu"
-    ],
-    "year": 2013,
-    "journal": "PLoS ONE",
-    "doi_or_url": "https://doi.org/10.1371/journal.pone.0077579",
-    "citation_count": 26,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2149901468",
-    "title": "Vicarious Group-Based Rejection: Creating a Potentially Dangerous Mix of Humiliation, Powerlessness, and Anger",
-    "authors": [
-      "Tinka Veldhuis",
-      "Ernestine Gordijn",
-      "Ren\u00e9 Veenstra",
-      "Siegwart Lindenberg"
-    ],
-    "year": 2014,
-    "journal": "PLoS ONE",
-    "doi_or_url": "https://doi.org/10.1371/journal.pone.0095421",
-    "citation_count": 26,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W3031733744",
-    "title": "Social exclusion modulates dual mechanisms of cognitive control: Evidence from ERPs",
-    "authors": [
-      "Mengsi Xu",
-      "Zhiai Li",
-      "Senqing Qi",
-      "Lingxia Fan",
-      "Xiaolin Zhou",
-      "Dong Yang"
-    ],
-    "year": 2020,
-    "journal": "Human Brain Mapping",
-    "doi_or_url": "https://doi.org/10.1002/hbm.24970",
-    "citation_count": 26,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W1840664602",
-    "title": "Social cognition in adolescence: Social rejection and theory of mind",
-    "authors": [
-      "Catherine L. Sebastian"
-    ],
-    "year": 2015,
-    "journal": "Psicolog\u00ed a Educativa",
-    "doi_or_url": "https://doi.org/10.1016/j.pse.2015.08.004",
-    "citation_count": 25,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W1905000327",
-    "title": "Chemosensory anxiety cues moderate the experience of social exclusion \u2013 an fMRI investigation with Cyberball",
-    "authors": [
-      "Olga A. Wudarczyk",
-      "Nils Kohn",
-      "Ren\u00e9 Bergs",
-      "Raquel E. Gur",
-      "Bruce I. Turetsky",
-      "Frank Schneider",
-      "Ute Habel"
-    ],
-    "year": 2015,
-    "journal": "Frontiers in Psychology",
-    "doi_or_url": "https://doi.org/10.3389/fpsyg.2015.01475",
-    "citation_count": 25,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2587406334",
-    "title": "Reduced Cortisol Output during Public Speaking Stress in Ostracized Women",
-    "authors": [
-      "Ulrike Weik",
-      "Jennifer Ruhweza",
-      "Renate Deinzer"
-    ],
-    "year": 2017,
-    "journal": "Frontiers in Psychology",
-    "doi_or_url": "https://doi.org/10.3389/fpsyg.2017.00060",
-    "citation_count": 24,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2339407828",
-    "title": "Target and Non-Target Processing during Oddball and Cyberball: A Comparative Event-Related Potential Study",
-    "authors": [
-      "Sarah Weschke",
-      "Michael Niedeggen"
-    ],
-    "year": 2016,
-    "journal": "PLoS ONE",
-    "doi_or_url": "https://doi.org/10.1371/journal.pone.0153941",
-    "citation_count": 24,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W3124198721",
-    "title": "Dynamics of the immediate behavioral response to partial social exclusion",
-    "authors": [
-      "Julia Dewald\u2010Kaufmann",
-      "Torsten W\u00fcstenberg",
-      "Barbara B. Barton",
-      "Stephan Goerigk",
-      "Matthias A. Reinhard",
-      "Richard Musil",
-      "Jana Werle",
-      "Peter Falkai",
-      "Andrea Jobst",
-      "Frank Padberg"
-    ],
-    "year": 2021,
-    "journal": "Scientific Reports",
-    "doi_or_url": "https://doi.org/10.1038/s41598-020-80039-0",
-    "citation_count": 24,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2228360701",
-    "title": "Determinants of Prosocial Behavior in Included Versus Excluded Contexts",
-    "authors": [
-      "Esther Cuadrado",
-      "Carmen Tabernero",
-      "Wolfgang Steinel"
-    ],
-    "year": 2016,
-    "journal": "Frontiers in Psychology",
-    "doi_or_url": "https://doi.org/10.3389/fpsyg.2015.02001",
-    "citation_count": 23,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2967776347",
-    "title": "Social Media Approval Reduces Emotional Arousal for People High in Narcissism: Electrophysiological Evidence",
-    "authors": [
-      "Kyle Nash",
-      "Andre Johansson",
-      "Kumar Yogeeswaran"
-    ],
-    "year": 2019,
-    "journal": "Frontiers in Human Neuroscience",
-    "doi_or_url": "https://doi.org/10.3389/fnhum.2019.00292",
-    "citation_count": 23,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2998824148",
-    "title": "Effects of rejection intensity and rejection sensitivity on social approach behavior in women",
-    "authors": [
-      "Violetta Schaan",
-      "Andr\u00e9 Schulz",
-      "Michael J. Bernstein",
-      "Hartmut Sch\u00e4chinger",
-      "Claus V\u00f6gele"
-    ],
-    "year": 2020,
-    "journal": "PLoS ONE",
-    "doi_or_url": "https://doi.org/10.1371/journal.pone.0227799",
-    "citation_count": 23,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2801539713",
-    "title": "Effects of Rifaximin on Central Responses to Social Stress\u2014a Pilot Experiment",
-    "authors": [
-      "Huiying Wang",
-      "Christoph Braun",
-      "Paul Enck"
-    ],
-    "year": 2018,
-    "journal": "Neurotherapeutics",
-    "doi_or_url": "https://doi.org/10.1007/s13311-018-0627-2",
-    "citation_count": 23,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W2089783709",
-    "title": "Transcutaneous Vagus Nerve Stimulation (tVNS) does not increase prosocial behavior in Cyberball",
-    "authors": [
-      "Roberta Sellaro",
-      "Laura Steenbergen",
-      "Bart Verkuil",
-      "Marinus H. van IJzendoorn",
-      "Lorenza S. Colzato"
-    ],
-    "year": 2015,
-    "journal": "Frontiers in Psychology",
-    "doi_or_url": "https://doi.org/10.3389/fpsyg.2015.00499",
-    "citation_count": 22,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W3173515322",
-    "title": "Experimental evidence that apologies promote forgiveness by communicating relationship value",
-    "authors": [
-      "Daniel E. Forster",
-      "Joseph Billingsley",
-      "Jeni L. Burnette",
-      "Debra Lieberman",
-      "Yohsuke Ohtsubo",
-      "Michael E. McCullough"
-    ],
-    "year": 2021,
-    "journal": "Scientific Reports",
-    "doi_or_url": "https://doi.org/10.1038/s41598-021-92373-y",
-    "citation_count": 22,
-    "is_high_impact": false,
-    "open_access": true,
-    "used_for": [
-      "task_workflow",
-      "timing_parameters"
-    ],
-    "parameter_bindings": {},
-    "notes": ""
-  },
-  {
-    "id": "W562128878",
-    "title": "The need to belong and the value of belongings: Does ostracism change the subjective value of personal possessions?",
-    "authors": [
-      "Lukasz Walasek",
-      "William J. Matthews",
-      "Tim Rakow"
-    ],
-    "year": 2015,
-    "journal": "Journal of Behavioral and Experimental Economics",
-    "doi_or_url": "https://doi.org/10.1016/j.socec.2015.04.012",
-    "citation_count": 22,
     "is_high_impact": false,
     "open_access": true,
     "used_for": [

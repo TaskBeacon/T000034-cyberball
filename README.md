@@ -5,16 +5,16 @@
 | Field | Value |
 |---|---|
 | Name | Cyberball Task |
-| Version | v0.1.0-dev |
+| Version | v0.1.1-dev |
 | URL / Repository | https://github.com/TaskBeacon/T000034-cyberball |
 | Short Description | Social inclusion and exclusion manipulation in virtual ball-tossing. |
 | Created By | TaskBeacon |
-| Date Updated | 2026-02-17 |
+| Date Updated | 2026-02-19 |
 | PsyFlow Version | 0.1.9 |
 | PsychoPy Version | 2025.1.1 |
 | Modality | Behavior |
 | Language | Chinese |
-| Voice Name | zh-CN-YunyangNeural |
+| Voice Name | zh-CN-YunyangNeural (voice disabled by default) |
 
 ## 1. Task Overview
 
