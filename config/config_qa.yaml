@@ -1,0 +1,236 @@
+subinfo_fields:
+- name: subject_id
+  type: int
+  constraints:
+    min: 101
+    max: 999
+    digits: 3
+subinfo_mapping:
+  subject_id: 被试编号（3位）
+  Participant Information: 被试信息
+  registration_failed: 注册失败
+  registration_successful: 注册成功
+  invalid_input: '{field} 输入无效'
+window:
+  size:
+  - 1280
+  - 720
+  units: pix
+  screen: 0
+  bg_color: gray
+  fullscreen: false
+  monitor_width_cm: 35.5
+  monitor_distance_cm: 60
+task:
+  task_name: cyberball
+  save_path: ./outputs/qa
+  total_blocks: 1
+  total_trials: 9
+  trial_per_block: 9
+  conditions:
+  - include
+  - exclude
+  - observe
+  key_list: &id001
+  - f
+  - j
+  - space
+  seed_mode: same_across_sub
+  delta: 1
+  language: Chinese
+  voice_name: zh-CN-YunyangNeural
+  voice_enabled: false
+timing:
+  cue_duration: 0.5
+  anticipation_duration: 1.0
+  prefeedback_duration: 0.4
+  feedback_duration: 0.8
+stimuli:
+  fixation:
+    type: text
+    text: +
+    color: white
+    height: 48
+    font: SimHei
+  instruction_text:
+    type: text
+    text: '网络传球任务
+
+
+      你将与两名虚拟玩家互动传球。
+
+      当球在你手中时：F=传给左侧玩家，J=传给右侧玩家。
+
+
+      按空格键开始。'
+    color: white
+    height: 28
+    wrapWidth: 980
+    font: SimHei
+  include_cue:
+    type: text
+    text: 线索：包容条件
+    color: green
+    height: 44
+    wrapWidth: 900
+    font: SimHei
+  exclude_cue:
+    type: text
+    text: 线索：排斥条件
+    color: red
+    height: 44
+    wrapWidth: 900
+    font: SimHei
+  observe_cue:
+    type: text
+    text: 线索：观察条件
+    color: yellow
+    height: 44
+    wrapWidth: 900
+    font: SimHei
+  include_target:
+    type: text
+    text: '如球在你手中，请选择传球对象
+
+      F=左侧玩家   J=右侧玩家'
+    color: white
+    height: 54
+    wrapWidth: 900
+    font: SimHei
+  exclude_target:
+    type: text
+    text: '如球在你手中，请选择传球对象
+
+      F=左侧玩家   J=右侧玩家'
+    color: white
+    height: 54
+    wrapWidth: 900
+    font: SimHei
+  observe_target:
+    type: text
+    text: 当前为观察试次，请跟踪传球并按空格确认
+    color: white
+    height: 54
+    wrapWidth: 900
+    font: SimHei
+  include_hit_feedback:
+    type: text
+    text: 反应已记录
+    color: green
+    height: 42
+    font: SimHei
+  include_miss_feedback:
+    type: text
+    text: 未在时限内作答
+    color: red
+    height: 42
+    font: SimHei
+  exclude_hit_feedback:
+    type: text
+    text: 反应已记录
+    color: green
+    height: 42
+    font: SimHei
+  exclude_miss_feedback:
+    type: text
+    text: 未在时限内作答
+    color: red
+    height: 42
+    font: SimHei
+  observe_hit_feedback:
+    type: text
+    text: 反应已记录
+    color: green
+    height: 42
+    font: SimHei
+  observe_miss_feedback:
+    type: text
+    text: 未在时限内作答
+    color: red
+    height: 42
+    font: SimHei
+  block_break:
+    type: text
+    text: '区块 {block_num}/{total_blocks}
+
+      记录率：{accuracy:.2%}
+
+      当前分数：{total_score}
+
+
+      按空格键继续'
+    color: white
+    height: 24
+    wrapWidth: 900
+    font: SimHei
+  good_bye:
+    type: text
+    text: '任务结束，最终分数：{total_score}
+
+
+      按空格键退出'
+    color: white
+    height: 28
+    wrapWidth: 900
+    font: SimHei
+triggers:
+  map:
+    exp_onset: 1
+    exp_end: 2
+    block_onset: 10
+    block_end: 11
+    include_cue_onset: 20
+    exclude_cue_onset: 21
+    observe_cue_onset: 22
+    include_anti_onset: 30
+    exclude_anti_onset: 31
+    observe_anti_onset: 32
+    include_target_onset: 40
+    exclude_target_onset: 41
+    observe_target_onset: 42
+    include_key_press: 50
+    exclude_key_press: 51
+    observe_key_press: 52
+    include_no_response: 60
+    exclude_no_response: 61
+    observe_no_response: 62
+    include_hit_fb_onset: 70
+    include_miss_fb_onset: 71
+    exclude_hit_fb_onset: 72
+    exclude_miss_fb_onset: 73
+    observe_hit_fb_onset: 74
+    observe_miss_fb_onset: 75
+  driver:
+    type: serial_url
+    url: loop://
+    baudrate: 115200
+  timing:
+    post_delay_ms: 1
+  policy:
+    strict: false
+controller:
+  initial_duration: 0.25
+  min_duration: 0.08
+  max_duration: 0.4
+  step: 0.02
+  target_accuracy: 0.66
+  condition_specific: true
+  enable_logging: true
+qa:
+  output_dir: outputs/qa
+  enable_scaling: true
+  timing_scale: 0.1
+  min_frames: 1
+  strict: false
+  max_wait_s: 10.0
+  acceptance_criteria:
+    required_columns:
+    - condition
+    - block_id
+    - trial_index
+    - target_key_press
+    - target_response
+    - target_rt
+    expected_trial_count: 9
+    allowed_keys: *id001
+    triggers_required: true

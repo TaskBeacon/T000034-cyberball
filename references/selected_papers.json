@@ -1,0 +1,546 @@
+[
+  {
+    "id": "W2107794155",
+    "title": "An fMRI Investigation of Attributing Negative Social Treatment to Racial Discrimination",
+    "authors": [
+      "Carrie L. Masten",
+      "Eva H. Telzer",
+      "Naomi I. Eisenberger"
+    ],
+    "year": 2010,
+    "journal": "Journal of Cognitive Neuroscience",
+    "doi_or_url": "https://doi.org/10.1162/jocn.2010.21520",
+    "citation_count": 132,
+    "is_high_impact": true,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W4245688421",
+    "title": "Disrupted Regulation of Social Exclusion in Alcohol-Dependence: An fMRI Study",
+    "authors": [
+      "Pierre Maurage",
+      "Fr\u00e9d\u00e9ric Joassin",
+      "Pierre Philippot",
+      "Alexandre Heeren",
+      "Nicolas Vermeulen",
+      "Pierre Mahau",
+      "christel delperdange",
+      "Olivier Corneille",
+      "Olivier Luminet",
+      "Philippe de Timary"
+    ],
+    "year": 2012,
+    "journal": "Neuropsychopharmacology",
+    "doi_or_url": "https://doi.org/10.1038/npp.2012.54",
+    "citation_count": 102,
+    "is_high_impact": true,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2048818633",
+    "title": "Cyberball: A program for use in research on interpersonal ostracism and acceptance",
+    "authors": [
+      "Kipling D. Williams",
+      "Blair Jarvis"
+    ],
+    "year": 2006,
+    "journal": "Behavior Research Methods",
+    "doi_or_url": "https://doi.org/10.3758/bf03192765",
+    "citation_count": 984,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2119867710",
+    "title": "An Implicit Theories of Personality Intervention Reduces Adolescent Aggression in Response to Victimization and Exclusion",
+    "authors": [
+      "David S. Yeager",
+      "Kali H. Trzesniewski",
+      "Carol S. Dweck"
+    ],
+    "year": 2012,
+    "journal": "Child Development",
+    "doi_or_url": "https://doi.org/10.1111/cdev.12003",
+    "citation_count": 353,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2345380149",
+    "title": "Introduction to Interpersonal Acceptance-Rejection Theory (IPARTheory) and Evidence",
+    "authors": [
+      "Ronald P. Rohner"
+    ],
+    "year": 2013,
+    "journal": "Online Readings in Psychology and Culture",
+    "doi_or_url": "https://doi.org/10.9707/2307-0919.1055",
+    "citation_count": 287,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3000840260",
+    "title": "Effectiveness of an Empathic Chatbot in Combating Adverse Effects of Social Exclusion on Mood",
+    "authors": [
+      "Mauro de Gennaro",
+      "Eva G. Krumhuber",
+      "Gale Lucas"
+    ],
+    "year": 2020,
+    "journal": "Frontiers in Psychology",
+    "doi_or_url": "https://doi.org/10.3389/fpsyg.2019.03061",
+    "citation_count": 233,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2254084475",
+    "title": "The effect of social exclusion on consumer preference for anthropomorphized brands",
+    "authors": [
+      "Rocky Peng Chen",
+      "Echo Wen Wan",
+      "Eric P. Levy"
+    ],
+    "year": 2016,
+    "journal": "Journal of Consumer Psychology",
+    "doi_or_url": "https://doi.org/10.1016/j.jcps.2016.05.004",
+    "citation_count": 229,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2144195598",
+    "title": "Do neural responses to rejection depend on attachment style? An fMRI study",
+    "authors": [
+      "C. Nathan DeWall",
+      "Carrie L. Masten",
+      "Caitlin Powell",
+      "David J. Combs",
+      "David R. Schurtz",
+      "Naomi I. Eisenberger"
+    ],
+    "year": 2011,
+    "journal": "Social Cognitive and Affective Neuroscience",
+    "doi_or_url": "https://doi.org/10.1093/scan/nsq107",
+    "citation_count": 202,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2138281587",
+    "title": "Time spent with friends in adolescence relates to less neural sensitivity to later peer rejection",
+    "authors": [
+      "Carrie L. Masten",
+      "Eva H. Telzer",
+      "Andrew J. Fuligni",
+      "Matthew D. Lieberman",
+      "Naomi I. Eisenberger"
+    ],
+    "year": 2010,
+    "journal": "Social Cognitive and Affective Neuroscience",
+    "doi_or_url": "https://doi.org/10.1093/scan/nsq098",
+    "citation_count": 199,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2762684930",
+    "title": "The soothing function of touch: affective touch reduces feelings of social exclusion",
+    "authors": [
+      "Mariana Von Mohr",
+      "Louise P. Kirsch",
+      "Aikaterini Fotopoulou"
+    ],
+    "year": 2017,
+    "journal": "Scientific Reports",
+    "doi_or_url": "https://doi.org/10.1038/s41598-017-13355-7",
+    "citation_count": 181,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2923860465",
+    "title": "Collective Narcissism: Political Consequences of Investing Self\u2010Worth in the Ingroup\u2019s Image",
+    "authors": [
+      "Agnieszka Golec de Zavala",
+      "Karolina Dyduch\u2010Hazar",
+      "Dorottya Lantos"
+    ],
+    "year": 2019,
+    "journal": "Political Psychology",
+    "doi_or_url": "https://doi.org/10.1111/pops.12569",
+    "citation_count": 180,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2104921294",
+    "title": "Social cognition in borderline personality disorder",
+    "authors": [
+      "Stefan Roepke",
+      "Aline Vater",
+      "Sandra Prei\u00dfler",
+      "Hauke R. Heekeren",
+      "Isabel Dziobek"
+    ],
+    "year": 2013,
+    "journal": "Frontiers in Neuroscience",
+    "doi_or_url": "https://doi.org/10.3389/fnins.2012.00195",
+    "citation_count": 178,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2765732947",
+    "title": "Paediatric population neuroimaging and the Generation R Study: the second wave",
+    "authors": [
+      "Tonya White",
+      "Ryan L. Muetzel",
+      "Hanan El Marroun",
+      "Laura M. E. Blanken",
+      "Philip R. Jansen",
+      "Koen Bolhuis",
+      "Desana Kocevska",
+      "Sabine E. Mous",
+      "Rosa Mulder",
+      "Vincent W.V. Jaddoe",
+      "Aad van der Lugt",
+      "Frank C. Verhulst"
+    ],
+    "year": 2017,
+    "journal": "European Journal of Epidemiology",
+    "doi_or_url": "https://doi.org/10.1007/s10654-017-0319-y",
+    "citation_count": 169,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1996808764",
+    "title": "Cold-blooded loneliness: Social exclusion leads to lower skin temperatures",
+    "authors": [
+      "Hans IJzerman",
+      "Marcello Gallucci",
+      "Wim Pouw",
+      "Sophia C. Wei\u03b2gerber",
+      "Niels J. Van Doesum",
+      "Kipling D. Williams"
+    ],
+    "year": 2012,
+    "journal": "Acta Psychologica",
+    "doi_or_url": "https://doi.org/10.1016/j.actpsy.2012.05.002",
+    "citation_count": 163,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1978329260",
+    "title": "Chronic Childhood Peer Rejection is Associated with Heightened Neural Responses to Social Exclusion During Adolescence",
+    "authors": [
+      "Geert\u2010Jan Will",
+      "P.A.C. van Lier",
+      "Eveline A. Crone",
+      "Berna G\u00fcro\u011flu"
+    ],
+    "year": 2015,
+    "journal": "Journal of Abnormal Child Psychology",
+    "doi_or_url": "https://doi.org/10.1007/s10802-015-9983-0",
+    "citation_count": 162,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2140470805",
+    "title": "Reducing aggressive responses to social exclusion using transcranial direct current stimulation",
+    "authors": [
+      "Paolo Riva",
+      "Leonor J. Romero Lauro",
+      "C. Nathan DeWall",
+      "David S. Chester",
+      "Brad J. Bushman"
+    ],
+    "year": 2014,
+    "journal": "Social Cognitive and Affective Neuroscience",
+    "doi_or_url": "https://doi.org/10.1093/scan/nsu053",
+    "citation_count": 155,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2098109055",
+    "title": "Cerebral processing of social rejection in patients with borderline personality disorder",
+    "authors": [
+      "Melanie Domsalla",
+      "Georgia Koppe",
+      "Inga Niedtfeld",
+      "Sabine Vollst\u00e4dt\u2010Klein",
+      "Christian Schmahl",
+      "Martin Bohus",
+      "Stefanie Lis"
+    ],
+    "year": 2013,
+    "journal": "Social Cognitive and Affective Neuroscience",
+    "doi_or_url": "https://doi.org/10.1093/scan/nst176",
+    "citation_count": 140,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2125656672",
+    "title": "Developmental Links Between Children\u2019s Working Memory and their Social Relations with Teachers and Peers in the Early School Years",
+    "authors": [
+      "Amber de Wilde",
+      "Hans M. Koot",
+      "P.A.C. van Lier"
+    ],
+    "year": 2015,
+    "journal": "Journal of Abnormal Child Psychology",
+    "doi_or_url": "https://doi.org/10.1007/s10802-015-0053-4",
+    "citation_count": 117,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2081105399",
+    "title": "In-group and out-group membership mediates anterior cingulate activation to social exclusion",
+    "authors": [
+      "Austen L. Krill"
+    ],
+    "year": 2009,
+    "journal": "Frontiers in Evolutionary Neuroscience",
+    "doi_or_url": "https://doi.org/10.3389/neuro.18.001.2009",
+    "citation_count": 116,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3117899885",
+    "title": "The VLPFC versus the DLPFC in Downregulating Social Pain Using Reappraisal and Distraction Strategies",
+    "authors": [
+      "Jun Zhao",
+      "Licheng Mo",
+      "Bi Rong",
+      "Zhenhong He",
+      "Yuming Chen",
+      "Feng Xu",
+      "Hui Xie",
+      "Dandan Zhang"
+    ],
+    "year": 2020,
+    "journal": "Journal of Neuroscience",
+    "doi_or_url": "https://doi.org/10.1523/jneurosci.1906-20.2020",
+    "citation_count": 112,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2149015899",
+    "title": "Neural Responses to Exclusion Predict Susceptibility to Social Influence",
+    "authors": [
+      "Emily B. Falk",
+      "Christopher N. Cascio",
+      "Matthew Brook O\u2019Donnell",
+      "Joshua Carp",
+      "Francis J. Tinney",
+      "C. Raymond Bingham",
+      "Jean T. Shope",
+      "Marie Claude Ouimet",
+      "Anuj K. Pradhan",
+      "Bruce G. Simons\u2010Morton"
+    ],
+    "year": 2014,
+    "journal": "Journal of Adolescent Health",
+    "doi_or_url": "https://doi.org/10.1016/j.jadohealth.2013.12.035",
+    "citation_count": 111,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2150116348",
+    "title": "Brief Mindfulness Meditation Improves Mental State Attribution and Empathizing",
+    "authors": [
+      "Lucy Tan",
+      "Barbara C. Y. Lo",
+      "C. Neil Macrae"
+    ],
+    "year": 2014,
+    "journal": "PLoS ONE",
+    "doi_or_url": "https://doi.org/10.1371/journal.pone.0110510",
+    "citation_count": 108,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2463168384",
+    "title": "Neural Correlates of Prosocial Behavior: Compensating Social Exclusion in a Four-Player Cyberball Game",
+    "authors": [
+      "Mara van der Meulen",
+      "Marinus H. van IJzendoorn",
+      "Eveline A. Crone"
+    ],
+    "year": 2016,
+    "journal": "PLoS ONE",
+    "doi_or_url": "https://doi.org/10.1371/journal.pone.0159045",
+    "citation_count": 102,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2152513380",
+    "title": "Narcissists\u2019 social pain seen only in the brain",
+    "authors": [
+      "Christopher N. Cascio",
+      "Sara Konrath",
+      "Emily B. Falk"
+    ],
+    "year": 2014,
+    "journal": "Social Cognitive and Affective Neuroscience",
+    "doi_or_url": "https://doi.org/10.1093/scan/nsu072",
+    "citation_count": 102,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  }
+]
