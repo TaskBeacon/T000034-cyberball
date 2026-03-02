@@ -34,6 +34,11 @@ task:
   left_key: f
   right_key: j
   no_response_policy: left
+  seed_mode: same_across_sub
+  player_names:
+    participant: You
+    left: Player A
+    right: Player B
   language: English
   voice_name: en-US-AriaNeural
   voice_enabled: false

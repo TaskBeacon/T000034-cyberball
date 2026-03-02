@@ -1,123 +1,41 @@
-task_id: T000034
-generated_at: '2026-02-18T17:07:12Z'
-selection_policy: openalex_filter_plus_manual_curation
+﻿task_id: T000034
+generated_at: '2026-03-02T15:05:00Z'
+selection_policy: manual_curation_literature_first
 citation_threshold: 100
 papers:
-- id: W2048818633
-  title: 'Cyberball: A program for use in research on interpersonal ostracism and
-    acceptance'
-  authors:
-  - Kipling D. Williams
-  - Blair Jarvis
-  year: 2006
-  journal: Behavior Research Methods
-  doi_or_url: https://doi.org/10.3758/bf03192765
-  citation_count: 984
-  is_high_impact: false
-  open_access: true
-  used_for:
-  - task_workflow
-  - timing_parameters
-  parameter_bindings: {}
-  notes: ''
-- id: W2463168384
-  title: 'Neural Correlates of Prosocial Behavior: Compensating Social Exclusion in
-    a Four-Player Cyberball Game'
-  authors:
-  - Mara van der Meulen
-  - Marinus H. van IJzendoorn
-  - Eveline A. Crone
-  year: 2016
-  journal: PLoS ONE
-  doi_or_url: https://doi.org/10.1371/journal.pone.0159045
-  citation_count: 102
-  is_high_impact: false
-  open_access: true
-  used_for:
-  - task_workflow
-  - timing_parameters
-  parameter_bindings: {}
-  notes: ''
-- id: W1964981411
-  title: 'The Chicago face database: A free stimulus set of faces and norming data'
-  authors:
-  - S. Debbie
-  - Joshua Correll
-  - Bernd Wittenbrink
-  year: 2015
-  journal: Behavior Research Methods
-  doi_or_url: https://doi.org/10.3758/s13428-014-0532-5
-  citation_count: 1753
-  is_high_impact: false
-  open_access: true
-  used_for:
-  - task_workflow
-  - timing_parameters
-  parameter_bindings: {}
-  notes: ''
-- id: W2008760801
-  title: IFN-Alpha-Induced Cortical and Subcortical Glutamate Changes Assessed by
-    Magnetic Resonance Spectroscopy
-  authors:
-  - Ebrahim Haroon
-  - Bobbi J. Woolwine
-  - Xiangchuan Chen
-  - Thaddeus W. W. Pace
-  - Samir Parekh
-  - James R. Spivey
-  - Xiaoping Hu
-  - Andrew H. Miller
-  year: 2014
-  journal: Neuropsychopharmacology
-  doi_or_url: https://doi.org/10.1038/npp.2014.25
-  citation_count: 152
-  is_high_impact: true
-  open_access: true
-  used_for:
-  - task_workflow
-  - timing_parameters
-  parameter_bindings: {}
-  notes: ''
-- id: W2107794155
-  title: An fMRI Investigation of Attributing Negative Social Treatment to Racial
-    Discrimination
-  authors:
-  - Carrie L. Masten
-  - Eva H. Telzer
-  - Naomi I. Eisenberger
-  year: 2010
-  journal: Journal of Cognitive Neuroscience
-  doi_or_url: https://doi.org/10.1162/jocn.2010.21520
-  citation_count: 132
-  is_high_impact: true
-  open_access: true
-  used_for:
-  - task_workflow
-  - timing_parameters
-  parameter_bindings: {}
-  notes: ''
-- id: W4245688421
-  title: 'Disrupted Regulation of Social Exclusion in Alcohol-Dependence: An fMRI
-    Study'
-  authors:
-  - Pierre Maurage
-  - Frédéric Joassin
-  - Pierre Philippot
-  - Alexandre Heeren
-  - Nicolas Vermeulen
-  - Pierre Mahau
-  - christel delperdange
-  - Olivier Corneille
-  - Olivier Luminet
-  - Philippe de Timary
-  year: 2012
-  journal: Neuropsychopharmacology
-  doi_or_url: https://doi.org/10.1038/npp.2012.54
-  citation_count: 102
-  is_high_impact: true
-  open_access: true
-  used_for:
-  - task_workflow
-  - timing_parameters
-  parameter_bindings: {}
-  notes: ''
+  - id: W2048818633
+    title: "Cyberball: A program for use in research on interpersonal ostracism and acceptance"
+    year: 2006
+    journal: "Behavior Research Methods"
+    doi_or_url: "https://doi.org/10.3758/BF03192765"
+    citation_count: 984
+    open_access: true
+    is_high_impact: false
+    used_for:
+      - paradigm_workflow
+      - inclusion_exclusion_manipulation
+      - toss_event_structure
+  - id: W2107794155
+    title: "An fMRI Investigation of Attributing Negative Social Treatment to Racial Discrimination"
+    year: 2010
+    journal: "Journal of Cognitive Neuroscience"
+    doi_or_url: "https://doi.org/10.1162/jocn.2010.21520"
+    citation_count: 132
+    open_access: true
+    is_high_impact: true
+    used_for:
+      - timing_windows
+      - event_coding
+      - response_policy
+  - id: W2463168384
+    title: "Neural Correlates of Prosocial Behavior: Compensating Social Exclusion in a Four-Player Cyberball Game"
+    year: 2016
+    journal: "PLOS ONE"
+    doi_or_url: "https://doi.org/10.1371/journal.pone.0159045"
+    citation_count: 102
+    open_access: true
+    is_high_impact: false
+    used_for:
+      - exclusion_dynamics
+      - participant_turn_behavior
+      - interpretation_notes

@@ -35,6 +35,11 @@ task:
   left_key: f
   right_key: j
   no_response_policy: random
+  seed_mode: same_across_sub
+  player_names:
+    participant: You
+    left: Player A
+    right: Player B
   language: English
   voice_name: en-US-AriaNeural
   voice_enabled: false
@@ -217,8 +222,8 @@ sim:
   output_dir: outputs/sim
   seed: 0
   participant_id: sim001
-  session_id: sim_session
-  log_path: outputs/sim/sim_events.jsonl
+  session_id: sub-sim001_task-cyberball_seed0
+  log_path: outputs/sim/sub-sim001_task-cyberball_seed0_sim_events.jsonl
   policy: warn
   default_rt_s: 0.2
   clamp_rt: false

@@ -1,86 +1,92 @@
-# Task Logic Audit: Cyberball Task (Williams & Jarvis, 2006)
+﻿# Task Logic Audit: Cyberball Task
 
 ## 1. Paradigm Intent
 
-- Task: `cyberball`
-- Primary construct: perceived social inclusion versus ostracism in a virtual ball-tossing interaction.
-- Manipulated factors: block condition (`inclusion`, `exclusion`) controlling avatar toss policy toward participant.
-- Dependent measures: tosses received by participant, tosses made by participant, response latency on participant turns.
+- Task: `cyberball`.
+- Construct: perceived social inclusion versus exclusion in a virtual three-player ball-tossing interaction.
+- Manipulated factor: block-level social condition (`inclusion`, `exclusion`) that controls avatar toss policy toward participant.
+- Primary dependent measures:
+  - participant ball-receive count
+  - participant toss count
+  - participant response key/RT on participant turns
+  - timeout frequency on participant turns.
 - Key citations:
-  - `W2048818633` (Williams & Jarvis, 2006, *Behavior Research Methods*)
+  - `W2048818633`
+  - `W2107794155`
+  - `W2463168384`
 
 ## 2. Block/Trial Workflow
 
 ### Block Structure
 
-- Total blocks: 2 (one inclusion block, one exclusion block).
-- Tosses per block: fixed count from config (`trial_per_block`).
-- Randomization/counterbalancing: block order follows configured conditions; avatar toss decisions are stochastic under inclusion and deterministic-after-threshold under exclusion.
+- Human profile: `2` blocks (`inclusion`, `exclusion`) with `30` toss events per block.
+- QA/sim profiles: reduced toss counts for validation speed.
+- Each trial is one toss event; `ball_state.holder` is shared within block to preserve continuous interaction dynamics.
 
-### Trial State Machine (One Toss = One Trial)
+### Trial State Machine (One Toss Event)
 
-1. `avatar_turn` (if current holder is avatar)
-   - Onset trigger: `avatar_turn_onset`
-   - Stimuli shown: three-player scene (participant bottom, two avatars top-left/top-right), ball at current holder, status line, wait prompt.
-   - Valid keys: `[]`
-   - Timeout behavior: auto-advance after random avatar delay (`avatar_decision_delay` range).
-   - Next state: `toss_animation`
+1. `avatar_turn` (if holder is left/right avatar)
+- Stimuli: full scene + `avatar_wait_prompt` + `status_line`.
+- Trigger: `avatar_turn_onset`.
+- Keys: none.
+- Duration: sampled from `avatar_decision_delay`.
+- Transition: controller chooses destination by condition policy.
 
-2. `participant_decision` (if current holder is participant)
-   - Onset trigger: `participant_turn_onset`
-   - Stimuli shown: same three-player scene with participant decision prompt.
-   - Valid keys: `[left_key, right_key]` (`f/j` by default).
-   - Timeout behavior: if no key before `participant_timeout`, fallback target selected by policy (`no_response_policy`).
-   - Next state: `toss_animation`
+2. `participant_turn` (if holder is participant)
+- Stimuli: full scene + `participant_prompt` + `status_line`.
+- Trigger: `participant_turn_onset`.
+- Keys: `left_key`, `right_key`.
+- Response triggers: `participant_choice_left` / `participant_choice_right`.
+- Timeout trigger: `participant_timeout`; fallback toss target selected via `no_response_policy`.
 
 3. `toss_animation`
-   - Onset trigger: `toss_start_to_participant` or `toss_start_to_left` or `toss_start_to_right`
-   - Stimuli shown: ball motion from current holder to selected target, full scene remains visible.
-   - Valid keys: `[]`
-   - Timeout behavior: auto-advance after `toss_animation_duration` plus optional `inter_toss_interval`.
-   - End trigger: `toss_end`
-   - Next state: next trial with updated holder.
+- Stimuli: full scene + `status_line`; ball rendered at destination holder.
+- Trigger: destination-specific toss start (`toss_start_to_participant` / `toss_start_to_left` / `toss_start_to_right`).
+- End trigger: `toss_end` emitted after animation interval.
+
+4. `inter_toss`
+- Stimuli: full scene + `status_line` with updated holder.
+- Trigger: none.
+- Duration: `inter_toss_interval`.
+- Transition: next trial uses updated holder.
 
 ## 3. Condition Semantics
 
-- Condition ID: `inclusion`
-  - Participant-facing meaning: participant remains included in passing interaction.
-  - Concrete stimulus realization: participant appears as one of three nodes and repeatedly receives ball across the block.
-  - Toss policy: avatars pass to participant with configured probability (`inclusion_receive_prob`, default ~0.33), otherwise to the other avatar.
+- `inclusion`:
+  - participant remains regularly involved in ball exchange.
+  - avatar toss target is participant with probability `inclusion_receive_prob`; otherwise avatar-to-avatar.
 
-- Condition ID: `exclusion`
-  - Participant-facing meaning: participant is initially included, then ostracized.
-  - Concrete stimulus realization: participant receives early tosses, then observes avatars passing only between each other.
-  - Toss policy: participant receives first `exclusion_initial_receives` avatar-to-participant tosses, then avatars pass exclusively to each other.
+- `exclusion`:
+  - participant may receive initial tosses, then becomes excluded from avatar passes.
+  - after `exclusion_initial_receives`, avatar tosses remain between avatars.
+
+Both conditions keep identical scene layout and response mapping; only toss-allocation policy changes.
 
 ## 4. Response and Scoring Rules
 
-- Response mapping: `f` = toss to left avatar, `j` = toss to right avatar.
-- Missing-response policy: no response within timeout triggers `participant_timeout`; target is selected via fallback policy and trial continues.
-- Correctness logic: no correct/incorrect classification (social interaction paradigm, not speeded discrimination).
-- Reward/penalty updates: no points/reward schedule; task tracks social exposure metrics instead.
-- Running metrics:
-  - per trial: holder before toss, holder after toss, participant turn flag, response key/timeout.
-  - per block/task: participant received count, participant toss count, total toss count.
+- Key mapping (default): `f` -> left avatar, `j` -> right avatar.
+- Timeout policy on participant turns:
+  - no valid response before `participant_timeout` emits timeout trigger
+  - runtime picks fallback target (`left`/`right`/`random`) from config.
+- Correct/incorrect scoring: none (social interaction paradigm).
+- Trial-level outputs include:
+  - `from_player`, `to_player`, `participant_turn`, `participant_response`, `participant_rt`, `participant_timed_out`, `participant_received`.
+- Block/session summaries in `main.py` include participant receives and participant toss counts.
 
 ## 5. Stimulus Layout Plan
 
-- Screen: game scene
-  - Stimulus IDs shown together: `participant_node`, `left_node`, `right_node`, `participant_label`, `left_label`, `right_label`, `ball`, `status_line`, plus phase prompt.
-  - Layout anchors (`pos`):
-    - participant: bottom center (`0, -245`)
-    - left avatar: upper-left (`-335, 180`)
-    - right avatar: upper-right (`335, 180`)
-    - status line: top center (`0, 300`)
-    - prompt line: lower center (`0, -40` to `0, -45`)
-  - Size/spacing:
-    - player node radius: `58`
-    - ball radius: `18`
-    - labels and prompts sized for readability at `1280x720`.
-  - Visual hierarchy:
-    - current holder highlighted by yellow node border.
-    - ball color distinct (yellow) from player nodes.
-  - Readability checks: all labels and prompts are spatially separated from nodes and from each other.
+- Window: `1280x720`, `pix`.
+- Player nodes:
+  - participant bottom center (`0, -245`)
+  - left avatar (`-335, 180`)
+  - right avatar (`335, 180`).
+- Labels are anchored on each node (`participant_label`, `left_label`, `right_label`).
+- Ball uses dedicated `ball` circle and is rendered at current/destination holder position.
+- `status_line` near top (`0, 300`) shows condition and toss progress.
+- Prompt channel near lower center:
+  - `avatar_wait_prompt` at `0, -40`
+  - `participant_prompt` at `0, -45`.
+- Active holder node is highlighted at runtime (line color/width) to guide attention.
 
 ## 6. Trigger Plan
 
@@ -90,22 +96,27 @@
 | `exp_end` | 2 | experiment end |
 | `block_onset` | 10 | block start |
 | `block_end` | 11 | block end |
-| `avatar_turn_onset` | 20 | avatar decision phase starts |
-| `participant_turn_onset` | 30 | participant decision phase starts |
-| `participant_choice_left` | 31 | participant chose left avatar |
-| `participant_choice_right` | 32 | participant chose right avatar |
-| `participant_timeout` | 33 | participant did not respond in time |
-| `toss_start_to_participant` | 40 | toss animation starts toward participant |
-| `toss_start_to_left` | 41 | toss animation starts toward left avatar |
-| `toss_start_to_right` | 42 | toss animation starts toward right avatar |
-| `toss_end` | 43 | toss animation finished |
+| `avatar_turn_onset` | 20 | avatar decision phase start |
+| `participant_turn_onset` | 30 | participant decision phase start |
+| `participant_choice_left` | 31 | participant chose left target |
+| `participant_choice_right` | 32 | participant chose right target |
+| `participant_timeout` | 33 | participant timeout on own turn |
+| `toss_start_to_participant` | 40 | toss animation starts to participant |
+| `toss_start_to_left` | 41 | toss animation starts to left avatar |
+| `toss_start_to_right` | 42 | toss animation starts to right avatar |
+| `toss_end` | 43 | toss animation ended |
 
-## 7. Inference Log
+## 7. Architecture Decisions (Auditability)
 
-- Decision: model each toss event as one trial for PsyFlow/TAPS logging.
-- Why inference was required: the original Cyberball paradigm is continuous; TAPS requires auditable trial records.
-- Citation-supported rationale: continuous three-player tossing is preserved while each toss transition is treated as a unit event.
+- `run_trial.py` is rebuilt to Cyberball-native toss logic (`avatar_turn` / `participant_turn` / `toss_animation` / `inter_toss`) with no MID-template phases.
+- `ball_state` is passed from `main.py` into each trial to maintain holder continuity across toss events.
+- Participant-facing role labels are config-driven via `task.player_names` and stimulus templates, enabling localization without code edits.
+- Sampler responder now acts on `participant_turn` (not template `target`) and can emit misses as participant timeouts.
+- Controller owns toss-target policy and longitudinal counts; runtime focuses on phase orchestration and event logging.
 
-- Decision: use deterministic ostracism after an initial receive threshold in `exclusion`.
-- Why inference was required: papers describe manipulation conceptually (initial inclusion then exclusion), not one canonical numeric schedule.
-- Citation-supported rationale: thresholded switch operationalizes the cited inclusion-then-ostracism manipulation while remaining configurable.
+## 8. Inference Log
+
+- Modeling one toss as one trial is an implementation inference to satisfy auditable PsyFlow/TAPS trial records while preserving continuous-game semantics.
+- Exact toss counts per profile (human/qa/sim) are operational inferences; they preserve condition semantics while keeping QA/sim runs short.
+- Visual highlight style (holder node border emphasis) is an implementation inference for readability and does not alter social manipulation semantics.
+- Fallback target policy on participant timeout is an implementation inference required to keep continuous interaction progressing in unattended runs.

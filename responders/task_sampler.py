@@ -9,11 +9,7 @@ from psyflow.sim.contracts import Action, Feedback, Observation, SessionInfo
 
 @dataclass
 class TaskSamplerResponder:
-    """Generic task sampler responder.
-
-    - Always provides a continue response for non-target phases when possible.
-    - Uses `hit_rate` on target phases to produce hits/misses.
-    """
+    """Sampler responder for Cyberball participant-turn decisions."""
 
     key: str | None = "space"
     hit_rate: float = 0.7
@@ -58,14 +54,19 @@ class TaskSamplerResponder:
         if rng is None:
             return Action(key=None, rt_s=None, meta={"source": "task_sampler", "reason": "rng_missing"})
 
-        chosen_key = self.key if self.key in valid_keys else valid_keys[0]
         phase = str(obs.phase or "")
         rt = max(self.rt_min_s, self._sample_normal(self.rt_mean_s, self.rt_sd_s))
 
-        if phase != "target":
-            return Action(key=chosen_key, rt_s=rt, meta={"source": "task_sampler", "phase": phase, "outcome": "continue"})
+        if phase != "participant_turn":
+            continue_key = "space" if "space" in valid_keys else valid_keys[0]
+            return Action(
+                key=continue_key,
+                rt_s=rt,
+                meta={"source": "task_sampler", "phase": phase, "outcome": "continue"},
+            )
 
         if self._sample_random() > self.hit_rate:
             return Action(key=None, rt_s=None, meta={"source": "task_sampler", "outcome": "miss"})
 
+        chosen_key = self.key if self.key in valid_keys else valid_keys[0]
         return Action(key=chosen_key, rt_s=rt, meta={"source": "task_sampler", "outcome": "hit"})
