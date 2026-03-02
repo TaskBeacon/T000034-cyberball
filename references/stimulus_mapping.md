@@ -4,10 +4,9 @@ Task: `Cyberball Task`
 
 | Condition | Implemented Stimulus IDs | Source Paper ID | Evidence (quote/figure/table) | Implementation Mode | Notes |
 |---|---|---|---|---|---|
-| `include` | `include_cue`, `include_target`, `include_hit_feedback`, `include_miss_feedback`, `fixation` | `W2048818633` | Condition-specific trial flow and outcome/response mapping described in selected paradigm references. | `psychopy_builtin` | Condition row resolved against current `config/config.yaml` stimuli and `src/run_trial.py` phase logic. |
-| `exclude` | `exclude_cue`, `exclude_target`, `exclude_hit_feedback`, `exclude_miss_feedback`, `fixation` | `W2048818633` | Condition-specific trial flow and outcome/response mapping described in selected paradigm references. | `psychopy_builtin` | Condition row resolved against current `config/config.yaml` stimuli and `src/run_trial.py` phase logic. |
-| `observe` | `observe_cue`, `observe_target`, `observe_hit_feedback`, `observe_miss_feedback`, `fixation` | `W2048818633` | Condition-specific trial flow and outcome/response mapping described in selected paradigm references. | `psychopy_builtin` | Condition row resolved against current `config/config.yaml` stimuli and `src/run_trial.py` phase logic. |
-| `all_conditions` | `instruction_text`, `block_break`, `good_bye`, `fixation` | `W2048818633` | Shared instruction, transition, and fixation assets support the common task envelope across all conditions. | `psychopy_builtin` | Shared assets are condition-agnostic and used in every run mode. |
+| `inclusion` | `participant_node`, `left_node`, `right_node`, `participant_label`, `left_label`, `right_label`, `ball`, `status_line`, `avatar_wait_prompt`, `participant_prompt` | `W2048818633` | Three-player virtual ball-toss game with participant included in circulation. | `psychopy_builtin` | Avatar toss policy includes participant with configurable probability. |
+| `exclusion` | `participant_node`, `left_node`, `right_node`, `participant_label`, `left_label`, `right_label`, `ball`, `status_line`, `avatar_wait_prompt`, `participant_prompt` | `W2048818633` | Three-player game with social exclusion manipulation after initial inclusion. | `psychopy_builtin` | Avatar toss policy transitions to avatar-only passing after configured initial receives. |
+| `all_conditions` | `instruction_text`, `block_break`, `good_bye` | `W2048818633` | Shared task envelope screens for instructions, block transitions, and termination. | `psychopy_builtin` | Content is condition-agnostic and used across modes. |
 
 Implementation mode legend:
 - `psychopy_builtin`: stimulus rendered via PsychoPy primitives in config.

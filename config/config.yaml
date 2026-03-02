@@ -6,200 +6,212 @@ subinfo_fields:
     max: 999
     digits: 3
 subinfo_mapping:
-  subject_id: 被试编号（3位）
-  Participant Information: 被试信息
-  registration_failed: 注册失败
-  registration_successful: 注册成功
-  invalid_input: '{field} 输入无效'
+  subject_id: Subject ID (3 digits)
+  Participant Information: Participant Information
+  registration_failed: Registration failed
+  registration_successful: Registration successful
+  invalid_input: '{field} is invalid'
 window:
   size:
   - 1280
   - 720
   units: pix
   screen: 0
-  bg_color: gray
+  bg_color: black
   fullscreen: false
   monitor_width_cm: 35.5
   monitor_distance_cm: 60
 task:
   task_name: cyberball
   save_path: ./outputs/human
-  total_blocks: 3
-  total_trials: 72
-  trial_per_block: 24
+  total_blocks: 2
+  total_trials: 60
+  trial_per_block: 30
   conditions:
-  - include
-  - exclude
-  - observe
+  - inclusion
+  - exclusion
   key_list:
   - f
   - j
   - space
-  seed_mode: same_across_sub
-  delta: 1
-  language: Chinese
-  voice_name: zh-CN-YunyangNeural
+  left_key: f
+  right_key: j
+  no_response_policy: random
+  language: English
+  voice_name: en-US-AriaNeural
   voice_enabled: false
 timing:
-  cue_duration: 0.5
-  anticipation_duration: 1.0
-  prefeedback_duration: 0.4
-  feedback_duration: 0.8
+  avatar_decision_delay:
+  - 0.8
+  - 1.2
+  toss_animation_duration: 0.45
+  participant_timeout: 2.5
+  inter_toss_interval: 0.25
 stimuli:
-  fixation:
-    type: text
-    text: +
-    color: white
-    height: 48
-    font: SimHei
   instruction_text:
     type: text
-    text: '网络传球任务
+    text: 'Cyberball Game
 
 
-      你将与两名虚拟玩家互动传球。
+      You are playing with two other players.
 
-      当球在你手中时：F=传给左侧玩家，J=传给右侧玩家。
+      When the ball comes to you, choose where to toss:
+      F = left player, J = right player.
 
 
-      按空格键开始。'
+      Press SPACE to begin.'
+    color: white
+    height: 30
+    wrapWidth: 980
+    pos:
+    - 0
+    - 40
+  participant_node:
+    type: circle
+    radius: 58
+    pos:
+    - 0
+    - -245
+    fillColor:
+    - 0.15
+    - 0.32
+    - 0.74
+    lineColor: white
+    lineWidth: 3
+  left_node:
+    type: circle
+    radius: 58
+    pos:
+    - -335
+    - 180
+    fillColor:
+    - 0.45
+    - 0.45
+    - 0.45
+    lineColor: white
+    lineWidth: 3
+  right_node:
+    type: circle
+    radius: 58
+    pos:
+    - 335
+    - 180
+    fillColor:
+    - 0.45
+    - 0.45
+    - 0.45
+    lineColor: white
+    lineWidth: 3
+  participant_label:
+    type: text
+    text: You
+    color: white
+    height: 26
+    pos:
+    - 0
+    - -245
+  left_label:
+    type: text
+    text: Player A
+    color: white
+    height: 24
+    pos:
+    - -335
+    - 180
+  right_label:
+    type: text
+    text: Player B
+    color: white
+    height: 24
+    pos:
+    - 335
+    - 180
+  ball:
+    type: circle
+    radius: 18
+    fillColor: yellow
+    lineColor: black
+    lineWidth: 2
+    pos:
+    - -335
+    - 180
+  avatar_wait_prompt:
+    type: text
+    text: '{holder_name} is deciding...'
+    color:
+    - 0.82
+    - 0.82
+    - 0.82
+    height: 24
+    pos:
+    - 0
+    - -40
+    wrapWidth: 900
+  participant_prompt:
+    type: text
+    text: 'Ball target: F = Player A, J = Player B'
+    color:
+    - 0.95
+    - 0.95
+    - 0.95
+    height: 26
+    pos:
+    - 0
+    - -45
+    wrapWidth: 900
+  status_line:
+    type: text
+    text: '{condition_name} | Toss {toss_num}/{total_tosses}'
+    color:
+    - 0.75
+    - 0.75
+    - 0.75
+    height: 22
+    pos:
+    - 0
+    - 300
+    wrapWidth: 900
+  block_break:
+    type: text
+    text: 'Block {block_num}/{total_blocks} complete
+
+      Condition: {condition_name}
+      Tosses received by participant: {participant_receives}
+      Tosses made by participant: {participant_turns}
+
+
+      Press SPACE to continue.'
+    color: white
+    height: 26
+    wrapWidth: 980
+  good_bye:
+    type: text
+    text: 'Task complete.
+
+      Total tosses: {total_tosses}
+      Tosses received by participant: {participant_receives_total}
+      Tosses made by participant: {participant_turns_total}
+
+
+      Press SPACE to exit.'
     color: white
     height: 28
     wrapWidth: 980
-    font: SimHei
-  include_cue:
-    type: text
-    text: 线索：包容条件
-    color: green
-    height: 44
-    wrapWidth: 900
-    font: SimHei
-  exclude_cue:
-    type: text
-    text: 线索：排斥条件
-    color: red
-    height: 44
-    wrapWidth: 900
-    font: SimHei
-  observe_cue:
-    type: text
-    text: 线索：观察条件
-    color: yellow
-    height: 44
-    wrapWidth: 900
-    font: SimHei
-  include_target:
-    type: text
-    text: '如球在你手中，请选择传球对象
-
-      F=左侧玩家   J=右侧玩家'
-    color: white
-    height: 54
-    wrapWidth: 900
-    font: SimHei
-  exclude_target:
-    type: text
-    text: '如球在你手中，请选择传球对象
-
-      F=左侧玩家   J=右侧玩家'
-    color: white
-    height: 54
-    wrapWidth: 900
-    font: SimHei
-  observe_target:
-    type: text
-    text: 当前为观察试次，请跟踪传球并按空格确认
-    color: white
-    height: 54
-    wrapWidth: 900
-    font: SimHei
-  include_hit_feedback:
-    type: text
-    text: 反应已记录
-    color: green
-    height: 42
-    font: SimHei
-  include_miss_feedback:
-    type: text
-    text: 未在时限内作答
-    color: red
-    height: 42
-    font: SimHei
-  exclude_hit_feedback:
-    type: text
-    text: 反应已记录
-    color: green
-    height: 42
-    font: SimHei
-  exclude_miss_feedback:
-    type: text
-    text: 未在时限内作答
-    color: red
-    height: 42
-    font: SimHei
-  observe_hit_feedback:
-    type: text
-    text: 反应已记录
-    color: green
-    height: 42
-    font: SimHei
-  observe_miss_feedback:
-    type: text
-    text: 未在时限内作答
-    color: red
-    height: 42
-    font: SimHei
-  block_break:
-    type: text
-    text: '区块 {block_num}/{total_blocks}
-
-      记录率：{accuracy:.2%}
-
-      当前分数：{total_score}
-
-
-      按空格键继续'
-    color: white
-    height: 24
-    wrapWidth: 900
-    font: SimHei
-  good_bye:
-    type: text
-    text: '任务结束，最终分数：{total_score}
-
-
-      按空格键退出'
-    color: white
-    height: 28
-    wrapWidth: 900
-    font: SimHei
 triggers:
   map:
     exp_onset: 1
     exp_end: 2
     block_onset: 10
     block_end: 11
-    include_cue_onset: 20
-    exclude_cue_onset: 21
-    observe_cue_onset: 22
-    include_anti_onset: 30
-    exclude_anti_onset: 31
-    observe_anti_onset: 32
-    include_target_onset: 40
-    exclude_target_onset: 41
-    observe_target_onset: 42
-    include_key_press: 50
-    exclude_key_press: 51
-    observe_key_press: 52
-    include_no_response: 60
-    exclude_no_response: 61
-    observe_no_response: 62
-    include_hit_fb_onset: 70
-    include_miss_fb_onset: 71
-    exclude_hit_fb_onset: 72
-    exclude_miss_fb_onset: 73
-    observe_hit_fb_onset: 74
-    observe_miss_fb_onset: 75
+    avatar_turn_onset: 20
+    participant_turn_onset: 30
+    participant_choice_left: 31
+    participant_choice_right: 32
+    participant_timeout: 33
+    toss_start_to_participant: 40
+    toss_start_to_left: 41
+    toss_start_to_right: 42
+    toss_end: 43
   driver:
     type: serial_url
     url: loop://
@@ -209,10 +221,7 @@ triggers:
   policy:
     strict: false
 controller:
-  initial_duration: 0.25
-  min_duration: 0.08
-  max_duration: 0.4
-  step: 0.02
-  target_accuracy: 0.66
-  condition_specific: true
+  inclusion_receive_prob: 0.33
+  exclusion_initial_receives: 2
+  random_seed: null
   enable_logging: true

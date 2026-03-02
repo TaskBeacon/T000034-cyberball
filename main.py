@@ -24,8 +24,6 @@ from src import Controller, run_trial
 
 
 def _make_qa_trigger_runtime():
-    # In QA mode we don't want to hit real hardware.
-    # Trigger logging (planned/executed) is handled by TriggerRuntime.
     return initialize_triggers(mock=True)
 
 
@@ -64,7 +62,7 @@ def run(options: TaskRunOptions):
 
 
 def _run_impl(*, mode: str, output_dir: Path | None, cfg: dict, participant_id: str):
-    # 2. Collect subject info (skip GUI in QA mode)
+    # 2. Collect subject info
     if mode == "qa":
         subject_data = {"subject_id": "qa"}
     elif mode == "sim":
@@ -80,14 +78,13 @@ def _run_impl(*, mode: str, output_dir: Path | None, cfg: dict, participant_id: 
 
     settings.add_subinfo(subject_data)
 
-    # In QA mode, force deterministic artifact locations.
     if mode == "qa" and output_dir is not None:
         output_dir.mkdir(parents=True, exist_ok=True)
         settings.res_file = str(output_dir / "qa_trace.csv")
         settings.log_file = str(output_dir / "qa_psychopy.log")
         settings.json_file = str(output_dir / "qa_settings.json")
 
-    # 4. Setup triggers (mock in QA)
+    # 4. Setup triggers
     settings.triggers = cfg["trigger_config"]
     if mode in ("qa", "sim"):
         trigger_runtime = _make_qa_trigger_runtime()
@@ -97,13 +94,11 @@ def _run_impl(*, mode: str, output_dir: Path | None, cfg: dict, participant_id: 
     # 5. Set up window & input
     win, kb = initialize_exp(settings)
 
-    # 6. Setup stimulus bank (skip TTS/voice conversion in QA)
+    # 6. Setup stimulus bank
     stim_bank = StimBank(win, cfg["stim_config"])
-    if mode not in ("qa", "sim"):
-        stim_bank = stim_bank.convert_to_voice("instruction_text")
     stim_bank = stim_bank.preload_all()
 
-    # 7. Setup controller across blocks
+    # 7. Setup controller
     settings.controller = cfg["controller_config"]
     settings.save_to_json()
     controller = Controller.from_dict(settings.controller)
@@ -111,16 +106,22 @@ def _run_impl(*, mode: str, output_dir: Path | None, cfg: dict, participant_id: 
     trigger_runtime.send(settings.triggers.get("exp_onset"))
 
     # Instruction
-    instr = StimUnit("instruction_text", win, kb, runtime=trigger_runtime).add_stim(
+    StimUnit("instruction_text", win, kb, runtime=trigger_runtime).add_stim(
         stim_bank.get("instruction_text")
-    )
-    if mode not in ("qa", "sim"):
-        instr.add_stim(stim_bank.get("instruction_text_voice"))
-    instr.wait_and_continue()
+    ).wait_and_continue()
 
     all_data = []
-    for block_i in range(settings.total_blocks):
-        # 8. setup block
+    total_blocks = int(getattr(settings, "total_blocks", 1))
+    trial_per_block = int(getattr(settings, "trial_per_block", 0) or 0)
+    if trial_per_block <= 0:
+        total_trials = int(getattr(settings, "total_trials", total_blocks) or total_blocks)
+        trial_per_block = max(1, total_trials // max(1, total_blocks))
+
+    for block_i in range(total_blocks):
+        condition = settings.conditions[block_i % len(settings.conditions)]
+        controller.start_block(block_idx=block_i, condition=str(condition))
+        ball_state = {"holder": 1}
+
         if mode not in ("qa", "sim"):
             count_down(win, 3, color="black")
 
@@ -132,7 +133,8 @@ def _run_impl(*, mode: str, output_dir: Path | None, cfg: dict, participant_id: 
                 window=win,
                 keyboard=kb,
             )
-                .generate_conditions()
+                # Use one repeated block condition; each trial is one toss event.
+                .add_condition([condition] * trial_per_block)
                 .on_start(lambda b: trigger_runtime.send(settings.triggers.get("block_onset")))
                 .on_end(lambda b: trigger_runtime.send(settings.triggers.get("block_end")))
                 .run_trial(
@@ -141,6 +143,7 @@ def _run_impl(*, mode: str, output_dir: Path | None, cfg: dict, participant_id: 
                         stim_bank=stim_bank,
                         controller=controller,
                         trigger_runtime=trigger_runtime,
+                        ball_state=ball_state, # Shared state across trials
                         block_id=f"block_{block_i}",
                         block_idx=block_i,
                     )
@@ -149,23 +152,31 @@ def _run_impl(*, mode: str, output_dir: Path | None, cfg: dict, participant_id: 
             )
 
         block_trials = block.get_all_data()
+        participant_receives = sum(1 for trial in block_trials if bool(trial.get("participant_received", False)))
+        participant_turns = sum(1 for trial in block_trials if bool(trial.get("participant_turn", False)))
 
-        # Calculate for the block feedback
-        hit_rate = sum(trial.get("target_hit", False) for trial in block_trials) / len(block_trials)
-        total_score = sum(trial.get("feedback_delta", 0) for trial in block_trials)
-        StimUnit("block", win, kb, runtime=trigger_runtime).add_stim(
-            stim_bank.get_and_format(
-                "block_break",
-                block_num=block_i + 1,
-                total_blocks=settings.total_blocks,
-                accuracy=hit_rate,
-                total_score=total_score,
-            )
-        ).wait_and_continue()
+        if block_i < (total_blocks - 1):
+            StimUnit("block", win, kb, runtime=trigger_runtime).add_stim(
+                stim_bank.get_and_format(
+                    "block_break",
+                    block_num=block_i + 1,
+                    total_blocks=total_blocks,
+                    condition_name=str(condition).title(),
+                    participant_receives=participant_receives,
+                    participant_turns=participant_turns,
+                )
+            ).wait_and_continue()
 
-    final_score = sum(trial.get("feedback_delta", 0) for trial in all_data)
+    participant_receives_total = sum(1 for trial in all_data if bool(trial.get("participant_received", False)))
+    participant_turns_total = sum(1 for trial in all_data if bool(trial.get("participant_turn", False)))
+
     StimUnit("goodbye", win, kb, runtime=trigger_runtime).add_stim(
-        stim_bank.get_and_format("good_bye", total_score=final_score)
+        stim_bank.get_and_format(
+            "good_bye",
+            participant_receives_total=participant_receives_total,
+            participant_turns_total=participant_turns_total,
+            total_tosses=len(all_data),
+        )
     ).wait_and_continue(terminate=True)
 
     trigger_runtime.send(settings.triggers.get("exp_end"))

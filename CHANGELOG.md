@@ -3,10 +3,12 @@
 ## [v0.1.1-dev] - 2026-02-19
 
 ### Changed
-- Rebuilt literature bundle with task-relevant curated papers and regenerated reference artifacts.
-- Replaced corrupted `references/task_logic_audit.md` with a full state-machine audit.
-- Updated `references/stimulus_mapping.md` to concrete implemented stimulus IDs per condition.
-- Synced metadata (`README.md`, `taskbeacon.yaml`) with current configuration and evidence.
+- Replaced MID-style cue/anticipation/target flow with Cyberball toss-event logic grounded in Williams & Jarvis (2006).
+- Reworked `src/run_trial.py` for three-player interaction (participant bottom, two avatars top-left/top-right) and interactive toss decisions.
+- Reworked `src/utils.py` controller for inclusion/exclusion toss policy with block-level and global receive tracking.
+- Rebuilt all configs (`config.yaml`, `config_qa.yaml`, `config_scripted_sim.yaml`, `config_sampler_sim.yaml`) around coherent `inclusion`/`exclusion` conditions and shared scene stimuli.
+- Replaced `references/task_logic_audit.md` with a literature-first manual audit and aligned `references/stimulus_mapping.md`/`references/parameter_mapping.md`.
+- Updated `README.md` to describe actual Cyberball block flow, trial phases, and controller policy.
 
 
 All notable development changes for `T000034-cyberball` are documented here.
