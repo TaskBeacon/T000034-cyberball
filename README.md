@@ -27,6 +27,8 @@ Each toss event is logged as one auditable trial to satisfy PsyFlow/TAPS trial-l
 
 ## 2. Task Flow
 
+![Task Flow](task_flow.png)
+
 ### Block-Level Flow
 
 | Step | Description |

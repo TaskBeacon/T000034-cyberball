@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import random
+from typing import Any
 
 from psychopy import logging
+from psyflow import StimUnit
 
 
 PLAYER_PARTICIPANT = 0
@@ -57,9 +59,6 @@ class Controller:
         self.toss_count_block = 0
         self.participant_received_block = 0
 
-    def next_trial_id(self) -> int:
-        return int(self.toss_count_total) + 1
-
     def sample_avatar_delay(self, avatar_delay_range: list[float] | tuple[float, float] | float) -> float:
         if isinstance(avatar_delay_range, (int, float)):
             value = max(0.0, float(avatar_delay_range))
@@ -111,3 +110,58 @@ class Controller:
                 f"toss_total={self.toss_count_total} from={from_player} to={to_player} "
                 f"condition={self.block_condition}"
             )
+
+
+def player_key(player: int) -> str:
+    if player == PLAYER_PARTICIPANT:
+        return "participant"
+    if player == PLAYER_LEFT:
+        return "left"
+    return "right"
+
+
+def player_name(player: int, player_names: dict[str, str]) -> str:
+    return str(player_names.get(player_key(player), player_key(player).title()))
+
+
+def ball_position_for_player(stim_bank: Any, player: int):
+    if player == PLAYER_PARTICIPANT:
+        return stim_bank.get("participant_node").pos
+    if player == PLAYER_LEFT:
+        return stim_bank.get("left_node").pos
+    return stim_bank.get("right_node").pos
+
+
+def add_scene(
+    unit: StimUnit,
+    stim_bank: Any,
+    *,
+    holder: int,
+    ball_holder: int,
+    status_stim: Any = None,
+    prompt_stim: Any = None,
+) -> StimUnit:
+    highlight_color = [1.0, 1.0, 0.0]
+    for node_id, player_id in (
+        ("participant_node", PLAYER_PARTICIPANT),
+        ("left_node", PLAYER_LEFT),
+        ("right_node", PLAYER_RIGHT),
+    ):
+        unit.add_stim(
+            stim_bank.rebuild(
+                node_id,
+                lineColor=highlight_color if player_id == holder else "white",
+                lineWidth=4 if player_id == holder else 3,
+            )
+        )
+
+    unit.add_stim(stim_bank.get("participant_label"))
+    unit.add_stim(stim_bank.get("left_label"))
+    unit.add_stim(stim_bank.get("right_label"))
+    unit.add_stim(stim_bank.rebuild("ball", pos=ball_position_for_player(stim_bank, ball_holder)))
+
+    if status_stim is not None:
+        unit.add_stim(status_stim)
+    if prompt_stim is not None:
+        unit.add_stim(prompt_stim)
+    return unit

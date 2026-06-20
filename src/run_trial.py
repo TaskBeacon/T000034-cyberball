@@ -3,38 +3,9 @@ from __future__ import annotations
 from functools import partial
 from typing import Any
 
-from psyflow import StimUnit, set_trial_context
+from psyflow import StimUnit, next_trial_id, resolve_deadline, set_trial_context
 
-from .utils import PLAYER_LEFT, PLAYER_PARTICIPANT, PLAYER_RIGHT
-
-
-def _deadline_s(value: Any) -> float | None:
-    if isinstance(value, (int, float)):
-        return float(value)
-    if isinstance(value, (list, tuple)) and value:
-        try:
-            return float(max(value))
-        except Exception:
-            return None
-    return None
-
-
-def _player_key(player: int) -> str:
-    if player == PLAYER_PARTICIPANT:
-        return "participant"
-    if player == PLAYER_LEFT:
-        return "left"
-    return "right"
-
-
-def _player_name(player: int, player_names: dict[str, str]) -> str:
-    return str(player_names.get(_player_key(player), _player_key(player).title()))
-
-
-def _trial_id(controller) -> int:
-    if hasattr(controller, "next_trial_id"):
-        return int(controller.next_trial_id())
-    return 1
+from .utils import PLAYER_LEFT, PLAYER_PARTICIPANT, PLAYER_RIGHT, add_scene, player_key, player_name
 
 
 def _sample_avatar_delay(controller, value: Any, default_value: float) -> float:
@@ -58,48 +29,6 @@ def _toss_start_trigger(settings, to_player: int):
     return settings.triggers.get("toss_start_to_right")
 
 
-def _ball_position_for_player(stim_bank, player: int):
-    if player == PLAYER_PARTICIPANT:
-        return stim_bank.get("participant_node").pos
-    if player == PLAYER_LEFT:
-        return stim_bank.get("left_node").pos
-    return stim_bank.get("right_node").pos
-
-
-def _add_scene(
-    unit: StimUnit,
-    stim_bank,
-    *,
-    holder: int,
-    ball_holder: int,
-    status_stim=None,
-    prompt_stim=None,
-) -> StimUnit:
-    highlight_color = [1.0, 1.0, 0.0]
-    for node_id, player_id in (
-        ("participant_node", PLAYER_PARTICIPANT),
-        ("left_node", PLAYER_LEFT),
-        ("right_node", PLAYER_RIGHT),
-    ):
-        node_stim = stim_bank.rebuild(
-            node_id,
-            lineColor=highlight_color if player_id == holder else "white",
-            lineWidth=4 if player_id == holder else 3,
-        )
-        unit.add_stim(node_stim)
-
-    unit.add_stim(stim_bank.get("participant_label"))
-    unit.add_stim(stim_bank.get("left_label"))
-    unit.add_stim(stim_bank.get("right_label"))
-    unit.add_stim(stim_bank.rebuild("ball", pos=_ball_position_for_player(stim_bank, ball_holder)))
-
-    if status_stim is not None:
-        unit.add_stim(status_stim)
-    if prompt_stim is not None:
-        unit.add_stim(prompt_stim)
-    return unit
-
-
 def run_trial(
     win,
     kb,
@@ -113,7 +42,7 @@ def run_trial(
     block_idx=None,
 ):
     """Run one toss event in the Cyberball state machine."""
-    trial_id = _trial_id(controller)
+    trial_id = int(next_trial_id())
     block_label = str(block_id) if block_id is not None else "block_0"
     block_index = int(block_idx) if block_idx is not None else 0
     trial_index = int(getattr(controller, "toss_count_block", 0)) + 1
@@ -137,6 +66,14 @@ def run_trial(
     total_tosses = int(getattr(settings, "trial_per_block", 0) or 0)
     if total_tosses <= 0:
         total_tosses = int(getattr(settings, "total_trials", 1) or 1)
+
+    trial_data = {
+        "condition": condition_label,
+        "trial_id": trial_id,
+        "trial_index": trial_index,
+        "block_id": block_label,
+        "block_idx": block_index,
+    }
 
     status_stim = stim_bank.get_and_format(
         "status_line",
@@ -162,7 +99,7 @@ def run_trial(
 
         participant_prompt = stim_bank.get("participant_prompt")
         participant_phase = make_unit(unit_label="participant_turn")
-        _add_scene(
+        add_scene(
             participant_phase,
             stim_bank,
             holder=holder_before,
@@ -174,13 +111,13 @@ def run_trial(
             participant_phase,
             trial_id=trial_id,
             phase="participant_turn",
-            deadline_s=_deadline_s(participant_timeout),
+            deadline_s=resolve_deadline(participant_timeout),
             valid_keys=response_keys,
             block_id=block_label,
             condition_id=condition_label,
             task_factors={
                 "condition": condition_label,
-                "holder_before": _player_key(holder_before),
+                "holder_before": player_key(holder_before),
                 "participant_turn": True,
                 "left_key": left_key,
                 "right_key": right_key,
@@ -198,7 +135,7 @@ def run_trial(
             },
             timeout_trigger=settings.triggers.get("participant_timeout"),
         )
-        participant_phase.to_dict()
+        participant_phase.to_dict(trial_data)
 
         response_key = str(participant_phase.get_state("response", "")).strip().lower()
         rt_value = participant_phase.get_state("rt", None)
@@ -220,11 +157,11 @@ def run_trial(
         avatar_delay = _sample_avatar_delay(controller, settings.avatar_decision_delay, 1.0)
         avatar_prompt = stim_bank.get_and_format(
             "avatar_wait_prompt",
-            holder_name=_player_name(holder_before, player_names),
+            holder_name=player_name(holder_before, player_names),
         )
 
         avatar_phase = make_unit(unit_label="avatar_turn")
-        _add_scene(
+        add_scene(
             avatar_phase,
             stim_bank,
             holder=holder_before,
@@ -236,13 +173,13 @@ def run_trial(
             avatar_phase,
             trial_id=trial_id,
             phase="avatar_turn",
-            deadline_s=_deadline_s(avatar_delay),
+            deadline_s=resolve_deadline(avatar_delay),
             valid_keys=[],
             block_id=block_label,
             condition_id=condition_label,
             task_factors={
                 "condition": condition_label,
-                "holder_before": _player_key(holder_before),
+                "holder_before": player_key(holder_before),
                 "participant_turn": False,
                 "block_idx": block_index,
             },
@@ -251,12 +188,12 @@ def run_trial(
         avatar_phase.show(
             duration=avatar_delay,
             onset_trigger=settings.triggers.get("avatar_turn_onset"),
-        ).to_dict()
+        ).to_dict(trial_data)
         to_player = int(controller.choose_avatar_target(holder_before, condition_label))
 
     toss_duration = float(getattr(settings, "toss_animation_duration", 0.45))
     toss_phase = make_unit(unit_label="toss_animation")
-    _add_scene(
+    add_scene(
         toss_phase,
         stim_bank,
         holder=holder_before,
@@ -268,14 +205,14 @@ def run_trial(
         toss_phase,
         trial_id=trial_id,
         phase="toss_animation",
-        deadline_s=_deadline_s(toss_duration),
+        deadline_s=resolve_deadline(toss_duration),
         valid_keys=[],
         block_id=block_label,
         condition_id=condition_label,
         task_factors={
             "condition": condition_label,
-            "from_player": _player_key(holder_before),
-            "to_player": _player_key(to_player),
+            "from_player": player_key(holder_before),
+            "to_player": player_key(to_player),
             "participant_turn": bool(participant_turn),
             "block_idx": block_index,
         },
@@ -284,13 +221,13 @@ def run_trial(
     toss_phase.show(
         duration=toss_duration,
         onset_trigger=_toss_start_trigger(settings, to_player),
-    ).to_dict()
+    ).to_dict(trial_data)
     trigger_runtime.send(settings.triggers.get("toss_end"))
 
     inter_toss_interval = float(getattr(settings, "inter_toss_interval", 0.0))
     if inter_toss_interval > 0:
         inter_toss = make_unit(unit_label="inter_toss")
-        _add_scene(
+        add_scene(
             inter_toss,
             stim_bank,
             holder=to_player,
@@ -302,40 +239,35 @@ def run_trial(
             inter_toss,
             trial_id=trial_id,
             phase="inter_toss",
-            deadline_s=_deadline_s(inter_toss_interval),
+            deadline_s=resolve_deadline(inter_toss_interval),
             valid_keys=[],
             block_id=block_label,
             condition_id=condition_label,
             task_factors={
                 "condition": condition_label,
-                "holder_after": _player_key(to_player),
+                "holder_after": player_key(to_player),
                 "participant_turn": bool(participant_turn),
                 "block_idx": block_index,
             },
             stim_id="cyberball_scene+status_line",
         )
-        inter_toss.show(duration=inter_toss_interval).to_dict()
+        inter_toss.show(duration=inter_toss_interval).to_dict(trial_data)
 
     controller.record_toss(from_player=from_player, to_player=to_player)
     ball_state["holder"] = int(to_player)
 
-    trial_data = {
-        "condition": condition_label,
-        "trial_id": trial_id,
-        "trial_index": trial_index,
-        "block_id": block_label,
-        "block_idx": block_index,
+    trial_data.update({
         "from_player": int(from_player),
         "to_player": int(to_player),
-        "from_player_id": _player_key(from_player),
-        "to_player_id": _player_key(to_player),
-        "from_player_name": _player_name(from_player, player_names),
-        "to_player_name": _player_name(to_player, player_names),
+        "from_player_id": player_key(from_player),
+        "to_player_id": player_key(to_player),
+        "from_player_name": player_name(from_player, player_names),
+        "to_player_name": player_name(to_player, player_names),
         "participant_turn": bool(participant_turn),
         "avatar_turn": bool(not participant_turn),
         "participant_response": participant_response,
         "participant_rt": participant_rt,
         "participant_timed_out": bool(participant_timed_out),
         "participant_received": bool(to_player == PLAYER_PARTICIPANT),
-    }
+    })
     return trial_data

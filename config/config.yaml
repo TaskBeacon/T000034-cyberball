@@ -228,5 +228,5 @@ triggers:
 controller:
   inclusion_receive_prob: 0.33
   exclusion_initial_receives: 2
-  random_seed: null
+  random_seed: 0
   enable_logging: true
